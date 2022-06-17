@@ -1,13 +1,14 @@
 // 1. ABSTRACTS IMPORTS
 @import "./abstracts/variables";
 @import "./abstracts/animations";
+@import "./abstracts/mixins";
 
 // 2. BASE IMPORTS
 @import "./base/base";
 @import "./base/typography";
 
 // 3. COMPONENTS IMPORTS
-@import "./components/navbar";
+@import "./components/navigation";
 @import "./components/carousel";
 @import "./components/footer";
 

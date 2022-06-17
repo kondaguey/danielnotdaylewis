@@ -1,34 +1,52 @@
 .footer {
   background-color: $limo-leather;
-  grid-column: 1 / -1;
-  grid-row: 10 / -1;
   padding: 2rem;
+  grid-area: C;
 }
 
 .nav {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 1rem;
   align-items: center;
-
-  &__link:link,
-  &__link:visited {
-      font-size: 1.4rem;
-      color: #fff;
-      text-decoration: none;
-      // font-family: $font-display;
-      text-transform: uppercase;
-      text-align: center;
-      padding: 1.5rem;
-      display: block;
-      transition: all .2s;
+  @include respond(large-phone) {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
   }
 
-  &__link:hover,
-  &__link:active {
-      background-color: rgba(#fff, .05);
-      transform: translateY(-3px);
+  &__item,
+  &__item:link,
+  &__item:visited {
+    align-self: center;
+    font-size: 2rem;
+    color: inherit;
+    font-family: $font-1;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all .2s;
+    @include respond(large-phone) {
+      padding: .5rem;
+    }
+
+    &:hover,
+    &:active {
+        background-color: rgba(#fff, .05);
+        transform: translateY(-3px);
+    }
+
+    i {
+      font-size: 5rem;
+    }
+
+    a, a:link, a:visited {
+      color: inherit;
+      font-size: 2rem;
+      text-decoration: none;
+    }  
   }
 }
 

@@ -1,13 +1,13 @@
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 
-function Navigation() {
+function Navigation() { 
 
   return (
-  <div className="header">
 
+  <div className="header">
     <Navbar fixed="top" bg="light" expand="lg">
-      <Container>
+      <Container> 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

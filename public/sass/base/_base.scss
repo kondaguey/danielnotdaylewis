@@ -13,6 +13,12 @@ html {
 
 .grid {
     display: grid;
-    grid-template-rows: min-content repeat(9, minmax(min-content, max-content));
-    grid-template-columns: repeat(10, minmax(10rem, max-content));
+    height: 100vh;
+    gap: 1rem;
+    
+    grid-template-areas:
+    "A A A A A A A A"
+    ". B B B B B B ."
+    ". B B B B B B ."
+    "C C C C C C C C";
 }

@@ -1,11 +1,12 @@
 .header {
-  
+  grid-area: A;
+
   &__nav {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    grid-gap: 2rem;
-    align-items: center;
+    // list-style: none;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    // grid-gap: 2rem;
+    // align-items: center;
 
     &__link:link,
     &__link:visited {
@@ -25,5 +26,7 @@
         background-color: rgba(#fff, .05);
         transform: translateY(-3px);
     }
+
+   
   }
 }
