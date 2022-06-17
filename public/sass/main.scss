@@ -1,15 +1,24 @@
 // 1. ABSTRACTS IMPORTS
+@import "./abstracts/variables";
+@import "./abstracts/animations";
 
 // 2. BASE IMPORTS
 @import "./base/base";
 @import "./base/typography";
 
 // 3. COMPONENTS IMPORTS
+@import "./components/navbar";
+@import "./components/carousel";
+@import "./components/footer";
 
 // 4. LAYOUT IMPORTS
 
 // 5. PAGES IMPORTS
+@import "./pages/home";
+@import "./pages/developer";
+@import "./pages/copywriter";
 
 // 6. THEMES IMPORTS
 
 // 7. VENDORS IMPORTS
+//Using directly in react

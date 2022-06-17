@@ -1,0 +1,36 @@
+@keyframes shake {
+
+  0% {
+      transform: rotate(0deg);
+      box-shadow: none;
+  }
+  10% {
+      transform: rotate(14deg);
+      box-shadow: none;
+  }
+  20% {
+      transform: rotate(-8deg);
+      box-shadow: none;
+  }
+  30% {
+      transform: rotate(14deg);
+      box-shadow: none;
+  }
+  40% {
+      transform: rotate(-4.0deg);
+      box-shadow: none;
+  }
+  50% {
+      transform: rotate(10deg);
+      box-shadow: none;
+  }
+  60% {
+    transform: rotate(0deg);
+    box-shadow: none;
+  } 
+  100% {
+    transform: rotate(0deg);
+    box-shadow: none;
+  }
+
+}

@@ -1,0 +1,62 @@
+.carousel {
+  height: 90vh;
+  background-color: $lilac-mist;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  
+  &__item {
+    height: 80vh;
+    
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    border: $blazing-bonfire 1px solid;
+  }
+
+  &__caption {
+    background-image: linear-gradient(to right, rgba($limo-leather, .3), rgba($limo-leather, .3));
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    color: $limo-leather;
+   
+    &-1 {
+      background-image: linear-gradient(to right, rgba($limo-leather, .3), rgba($limo-leather, .3));
+      color: $polar-bear;
+      
+    }
+  }
+}
+
+.carousel-control-next-icon {
+  width: 5rem;
+  height: 5rem;
+  transition: all .3s;
+  &:hover{
+    background-color: $shasta-lake;
+  }
+}
+
+.carousel-control-prev-icon {
+  width: 5rem;
+  height: 5rem;
+  transition: all .3s;
+
+  &:hover{
+    background-color: $shasta-lake;
+  }
+}
