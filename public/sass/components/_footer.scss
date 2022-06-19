@@ -1,61 +1,63 @@
 .footer {
-  background-color: $limo-leather;
-  padding: 2rem;
-  grid-area: C;
-}
+  background-color: $color-grey-dark;
 
-.nav {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  grid-gap: 1rem;
-  align-items: center;
-  @include respond(large-phone) {
-    list-style: none;
+  @include respond(tab-land_laptop) {
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+  }
+
+  &__nav {
     display: flex;
     justify-content: space-around;
-  }
+    align-items: center;
+    padding-top: 2rem;
 
-  &__item,
-  &__item:link,
-  &__item:visited {
-    align-self: center;
-    font-size: 2rem;
-    color: inherit;
-    font-family: $font-1;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 1.5rem;
-    display: block;
-    transition: all .2s;
-    @include respond(large-phone) {
-      padding: .5rem;
-    }
+    &__item,
+    &__item:link,
+    &__item:visited {
 
-    &:hover,
-    &:active {
-        background-color: rgba(#fff, .05);
-        transform: translateY(-3px);
-    }
-
-    i {
-      font-size: 5rem;
-    }
-
-    a, a:link, a:visited {
-      color: inherit;
+      align-items: center;
       font-size: 2rem;
+      color: inherit;
+      font-family: $font-1;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 1.5rem;
+      display: block;
+      transition: all .2s;
       text-decoration: none;
-    }  
+      &:hover,
+      &:active {
+        transform: translateY(-.5rem);
+      }
+      span {
+        font-size: 3rem;
+        padding-right: 1rem;
+      }
+    }
   }
-}
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey-dark;
+    font-size: 1.4rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 70%;
+    
 
-.copyright {
-  font-size: 1.4rem;
-  color: $polar-bear;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  width: 70%;
-  margin-top: 5rem;
+    &-year {
+      color: $color-white;
+      margin-right: 2.5rem;
+
+    }
+    &-img{
+      width: 10%;
+      margin-left: 2.5rem;
+    }
+  }
+  
 }

@@ -1,5 +1,5 @@
 import Home from "./pages/Home";
-import Navigation from "./components/Navigation";
+import MenuBar from "./components/MenuBar";
 import Developer from "./pages/Developer";
 import Copywriter from "./pages/Copywriter";
 import Footer from "./components/Footer";
@@ -8,7 +8,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="grid">
+    <div className="main-grid">
+      <MenuBar />
         <Router>
           <Routes>
             <Route path='/' element={<Home />} />
@@ -17,6 +18,7 @@ function App() {
           </Routes>
         </Router>
       <Footer />
+     
     </div>
   )
 };

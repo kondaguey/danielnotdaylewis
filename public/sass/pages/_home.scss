@@ -1,79 +1,9 @@
 .home {
-  
-  &__grid {
-    grid-area: B;
-    padding: 5rem 0;
-    
-    h3 {
-      padding-top: 5rem;
-      text-align: center;
-    }
-  };
-
-  &__title {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 8rem min-content;
-   
-    &-heading {
-      font-size: 3.5rem;
-      text-align: center;
-      @include respond(phone) {
-        font-size: 3rem;
-      }
-    }
-
-    &-emoji, &-emoji:link, &-emoji:visited {
-      font-size: 10rem; 
-      text-decoration: none;
-      animation: shake 2.5s infinite;
-      transform-origin: 50% 50%;
-      text-align: center;
-      @include respond(phone) {
-        font-size: 8rem;
-      }
-
-      &:hover {
-        cursor: pointer;
-      }
-    }
-
-    &-subheading {
-      font-size: 2rem;
-      text-align: center;
-    }
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 1rem;
+  @include respond(tab-land_laptop) {
+    grid-template-rows: 75vh;
   }
-
-  &__menu {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2rem;
-
-    &-selection, &-selection:link, &-selection:visited  {
-      font-size: 8rem;
-      display: flex;
-      flex-direction: column;
-      text-decoration: none;
-      color: inherit;
-      transition: all .01s;
-
-      span:hover {
-        animation: rise 1s infinite;
-      }
-
-      @include respond(tab-port) {
-        span:active {
-          transform: scaleY(-2rem);
-          border: $beachside-drive 1px solid;
-          animation: none;
-        }
-      }
-    }
-
-    p {
-      font-size: 2rem;
-      align-self: center;
-    }
-  }
-
 }

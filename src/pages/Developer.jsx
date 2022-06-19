@@ -1,11 +1,28 @@
 import React from "react";
-import Navigation from "../components/Navigation";
+import MenuBar from "../components/MenuBar";
 
 function Developer() {
   return (
-  <div className="dev__grid">
-    <Navigation />
-    <h1>🏗 Big time construction underway</h1>
+  <div className="dev">
+    <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
+     <h1>🏗 Big time construction underway </h1>
   </div>
   );
 }
