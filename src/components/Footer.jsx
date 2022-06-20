@@ -17,13 +17,13 @@ function Footer() {
           <a href="#" className="footer__nav__item-link">Collab</a>
         </li>
         <li className="footer__nav__item">
-          <a href="#" className="footer__nav__item-link">
+          <a href="https://github.com/kondaguey" className="footer__nav__item-link" target="_blank" >
             <span className="footer__nav__item-logo" ><AiFillGithub/></span>
             Github
           </a>
         </li>
         <li className="footer__nav__item">
-          <a href="#" className="footer__nav__item-link">
+          <a href="https://www.linkedin.com/in/daniel-lewis-55a903195/" target="_blank" className="footer__nav__item-link">
             <span className="footer__nav__item-logo" ><AiFillLinkedin/></span>
             LinkedIn
           </a>
