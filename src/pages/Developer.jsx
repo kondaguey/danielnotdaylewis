@@ -16,25 +16,25 @@ function Developer() {
       <div className="dev__skills__skill-1">
           <h3>Structure and Styles</h3>
           <img src="./img/tech-logo-1.png" alt="img" />
-          <p>The Sass Logo is the biggest, because that's what I like best. I've taken great time and effort to work with this pre-processor in an advanced fashion. I use 7-1 file architecture with BEM-naming conventions and don't think I can ever do anythng differently anymore.</p>
+          <p>I've taken great time and effort to work with this pre-processor in an advanced fashion. My styling workflow looks like a nice combo of the 7-1 Sass file architecture with BEM-naming conventions.</p>
       </div>
 
       <div className="dev__skills__skill-2">
         <h3>JS Stack</h3>
         <img src="./img/tech-logo-2.png" alt="img" />
-        <p>Admittedly, I did not choose to focus as hard on vanilla JavaScript as on React. But my proficiency in node JS makes me feel OK about this. Both can be frustrating in their own right but having the ability to be a backend developer using Node.js Gives me a reprieve from the frustration of front and development and vice versa.</p>
+        <p>After getting the basics of vanilla Javascript down, I was off to the races with the React frontend and node backend for powerful fullstack development written entirely in JavaScript. Now that I'm taking up power of SSG with Next.js for truly next-level app development.</p>
       </div>
 
       <div className="dev__skills__skill-3">
         <h3>NoSQL DB Stack</h3>
         <img src="./img/tech-logo-3.png" alt="img" />
-        <p>Given that I've become quite fond of the MERN Stack, naturally MondoDB, enhanced with Mongoose.js is my go-to database.</p>
+        <p>Given that I've become quite fond of the MERN Stack, MondoDB enhanced with Mongoose.js is now my go-to database stack.</p>
       </div>
 
       <div className="dev__skills__skill-4">
         <h3>Blockchain / Web3 Stack</h3> 
         <img src="./img/tech-logo-4.png" alt="img" />
-        <p>Ultimately, I'm going in the direction of web3. It's undoubtedly the next iteration of the web. Within the context of Web3 I'm trying to be on the bleeding-edge as much as possible. That's why I'm learning <a href="https://www.youtube.com/watch?v=4eSceDOS-Ms" target="_blank" >Motoko</a> from the <a href="https://dfinity.org/" target="_blank">DFINITY Foundation</a> to launch 100% on-chain DApps to the <a href="https://www.youtube.com/watch?v=rMuCZuPllEE" target="_blank">ICP</a> as well as Solidity, Hardhat, and Moralis.</p>
+        <p>Ultimately, I'm going the direction of Web3 and the Blockchain. It's undoubtedly the next iteration of the web. Within the context of Web3 I'm walking on the cutting-edge of tomorrow. That's why in addition to Solidity, I'm learning <a href="https://www.youtube.com/watch?v=4eSceDOS-Ms" target="_blank" >Motoko</a> from the <a href="https://dfinity.org/" target="_blank">DFINITY Foundation</a> to launch 100% on-chain DApps to the <a href="https://www.youtube.com/watch?v=rMuCZuPllEE" target="_blank">ICP</a>. Throw in Hardhat, and Moralis for safe measure, and I'll be building "Web3" versions of all my Web2 Apps in no time.</p>
       </div>
     </div>
 
