@@ -1,5 +1,6 @@
 .menu-bar {
   grid-column: 1 / -1;
+
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -8,12 +9,16 @@
   padding-left: 3rem; 
 
   &__logo {
-    width: 20rem;
+    width: 30rem;
     height: auto;
+    @include respond(mobile-port) {
+      width: 8rem;
+      height: auto;
+    }
   }
 
   &__header {
-    font-size: 2rem;
+    font-size: 4rem;
     font-family: $font-1;
     text-transform: uppercase;
     letter-spacing: .3rem;
@@ -21,6 +26,10 @@
     -webkit-background-clip: text;
     color: transparent;
     padding-left: 60rem;
+    @include respond(mobile-port) {
+      font-size: 3rem;
+      letter-spacing: .2rem;
+    }
     
   }
 
@@ -55,17 +64,17 @@
           color: $color-tertiary
         }
 
-        &-dropdown {
+        &-dropdown { 
           position: absolute;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           background-color: $color-tertiary;
-          opacity: 80%;
+          opacity: 90%;
           border-radius: 1rem;
           padding: 1rem;
-          transform: translate(-32%,16%);
+          transform: translate(-27%,5%);
 
           &--item {
             padding: 1rem;

@@ -1,8 +1,180 @@
 .dev {
   display: grid;
-  
-  grid-template-rows: repeat(10, 1fr);
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: min-content min-content min-content min-content;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 18rem)[col-end]) [center-end] 1fr [full-end];
 
-  grid-gap: 1rem;
+  &__header {
+    grid-column: center-start / center-end;
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    
+    h1 {
+      @include themeGradient;
+      animation: moveInBottom .7s ease-in;
+      justify-self: center;
+    }
+
+    p {
+
+    }
+  }
+
+  &__skills {
+    grid-column: center-start / center-end;
+
+    display: flex;
+    flex-direction: column;
+    
+    margin: 10rem 0;
+
+    &__skill {
+
+      &-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        margin-bottom: 15rem;
+
+        h3{
+          justify-self: center;
+          padding-left: 5rem;
+          margin-bottom: 5rem;
+        }
+        img {
+          width: 35%;
+          grid-column: 1;
+          justify-self: center;
+          padding-left: 5rem;
+          
+        }
+        p {
+          justify-self: start;
+          padding-right: 10rem;
+          font-size: 2.5rem;
+        }
+      }
+
+      &-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        margin-bottom: 15rem;
+        h3{
+          justify-self: center;
+          grid-column: 2;
+          padding-left: 5rem;
+          margin-bottom: 5rem;
+        }
+        img {
+          width: 35%;
+          grid-column: 2;
+          justify-self: center;
+          padding-left: 5rem;
+          
+        }
+        p {
+          grid-column: 1;
+          grid-row: 2;
+          justify-self: start;
+          padding-left: 10rem;
+          font-size: 2.5rem;
+        }
+      }
+
+      &-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        margin-bottom: 15rem;
+
+        h3{
+          justify-self: center;
+          padding-left: 5rem;
+          margin-bottom: 5rem;
+        }
+        img {
+          width: 35%;
+          grid-column: 1;
+          justify-self: center;
+          padding-left: 5rem;
+          
+          top: 0;
+          left: 0;
+          
+        }
+        p {
+          justify-self: start;
+          padding-right: 10rem;
+          font-size: 2.5rem;
+        }
+      }
+
+      &-4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        margin-bottom: 15rem;
+        h3{
+          justify-self: center;
+          align-self: center;
+          grid-column: 2;
+          
+          margin-bottom: 5rem;
+        }
+        img {
+          width: 35%;
+          grid-column: 2;
+          justify-self: center;
+          align-self: center;
+          padding-left: 5rem;
+          border: $color-secondary 1px solid;
+          
+        }
+        p {
+          grid-column: 1;
+          grid-row: 2;
+          justify-self: start;
+          padding-left: 10rem;
+          font-size: 2.5rem;
+
+          a {
+            @include themeGradient;
+            text-decoration: underline;
+          }
+
+          a:hover {
+            @include themeGradientReverse;
+            
+            cursor: pointer;
+
+          }
+        }
+      }
+    }
+  }
+
+  &__projects {
+    grid-row: 3 / 4;
+    grid-column: col-start 3 / col-end 6;
+
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+    grid-gap: 5rem;
+    
+
+    h2 {
+      justify-self: center;
+    }
+  }
+
+    
+  &__construct {
+    grid-column: 1 / -1;
+    margin-top: 10rem;
+    img{
+      width: 100%;
+      
+    }
+  }
 }

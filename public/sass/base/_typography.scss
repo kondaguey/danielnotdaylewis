@@ -1,0 +1,21 @@
+h1 {
+
+  font-size: 10rem;
+
+}
+
+h2 {
+  font-size: 7rem;
+  color: $color-tertiary;
+}
+
+h3 {
+  font-size: 5rem;
+  background-image: linear-gradient(to right, $color-primary, $color-secondary);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+p {
+  font-size: 2.3rem;
+}
