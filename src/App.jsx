@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
 import MenuBar from "./components/MenuBar";
 import Developer from "./pages/Developer";
+import Actor from "./pages/Actor";
 import Copywriter from "./pages/Copywriter";
 import Footer from "./components/Footer";
 
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/developer' element={<Developer />} />
+            <Route path='/actor' element={<Actor/>} />
             <Route path='/copywriter' element={<Copywriter />} />
           </Routes>
         </Router>

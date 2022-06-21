@@ -10,6 +10,7 @@ function DropdownMenu(props) {
     <div> 
         <ul className="menu-bar__links__item-button-dropdown">
           <li className="menu-bar__links__item-button-dropdown--item"><a href="/developer">/developer</a></li>
+          <li className="menu-bar__links__item-button-dropdown--item"><a href="/actor">/actor</a></li>
           <li className="menu-bar__links__item-button-dropdown--item"><a href="/copywriter">/copywriter</a></li>
         </ul>
     </div>

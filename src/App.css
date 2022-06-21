@@ -105,7 +105,7 @@ h3 {
 
 p {
   font-size: 2.3rem; }
-  @media only screen and (max-width: 22.5em) {
+  @media only screen and (max-width: 25em) {
     p {
       font-size: 3.5rem; } }
 
@@ -116,32 +116,52 @@ p {
   justify-content: space-around;
   background-color: #E4E4E7;
   padding-left: 3rem; }
+  @media only screen and (max-width: 25em) {
+    .menu-bar {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0;
+      padding-bottom: 2.8rem;
+      margin-bottom: 10rem; } }
   .menu-bar__logo {
     width: 20rem;
     height: auto; }
-    @media only screen and (max-width: 22.5em) {
+    @media only screen and (max-width: 25em) {
       .menu-bar__logo {
-        width: 8rem;
+        width: 25rem;
         height: auto; } }
   .menu-bar__header {
-    font-size: 2.7rem;
+    font-size: 3rem;
+    width: 100%;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     letter-spacing: .3rem;
     background-image: linear-gradient(to right, #01AAE4, #6EC362);
     -webkit-background-clip: text;
     color: transparent;
-    padding-left: 60rem; }
-    @media only screen and (max-width: 22.5em) {
+    padding-left: 50rem; }
+    @media only screen and (max-width: 37.5em) {
       .menu-bar__header {
-        font-size: 3rem;
-        letter-spacing: .2rem; } }
+        padding-left: 5rem;
+        font-size: 2.7rem; } }
+    @media only screen and (max-width: 25em) {
+      .menu-bar__header {
+        font-size: 2.5rem;
+        letter-spacing: .2rem;
+        padding-left: 0;
+        align-self: center;
+        justify-self: center;
+        text-align: center; } }
   .menu-bar__links {
     display: flex;
     align-items: center;
     justify-content: flex-end; }
     .menu-bar__links__item {
       padding-right: 10rem; }
+      @media only screen and (max-width: 25em) {
+        .menu-bar__links__item {
+          padding-right: 0; } }
       .menu-bar__links__item-button {
         display: flex;
         align-items: center;
@@ -154,6 +174,12 @@ p {
         border-radius: 50%/50%;
         padding: 1rem;
         margin: .5rem; }
+        @media only screen and (max-width: 25em) {
+          .menu-bar__links__item-button {
+            align-self: center;
+            width: 8rem;
+            height: 8rem;
+            margin-top: 5rem; } }
         .menu-bar__links__item-button:hover {
           filter: brightness(1.2);
           color: #ACDBDB; }
@@ -168,6 +194,9 @@ p {
           border-radius: 1rem;
           padding: 1rem;
           transform: translate(-27%, 5%); }
+          @media only screen and (max-width: 25em) {
+            .menu-bar__links__item-button-dropdown {
+              transform: translate(-13%, 0); } }
           .menu-bar__links__item-button-dropdown--item {
             padding: 1rem; }
             .menu-bar__links__item-button-dropdown--item a {
@@ -183,13 +212,25 @@ p {
 .footer {
   background-color: #5D5558;
   grid-column: 1 / -1; }
+  @media only screen and (max-width: 25em) {
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
   .footer__nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 2rem; }
+    @media only screen and (max-width: 25em) {
+      .footer__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
     .footer__nav__item, .footer__nav__item:link, .footer__nav__item:visited {
-      align-items: center;
+      align-self: center;
       font-size: 2rem;
       color: inherit;
       font-family: "Montserrat", sans-serif;
@@ -202,24 +243,33 @@ p {
       .footer__nav__item:hover, .footer__nav__item:active, .footer__nav__item:link:hover, .footer__nav__item:link:active, .footer__nav__item:visited:hover, .footer__nav__item:visited:active {
         transform: translateY(-0.5rem); }
       .footer__nav__item span, .footer__nav__item:link span, .footer__nav__item:visited span {
-        font-size: 3rem;
+        font-size: 4rem;
         padding-right: 1rem; }
   .footer__copyright {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5D5558;
-    font-size: 1.4rem;
     margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    width: 70%; }
+    margin-left: auto; }
+    @media only screen and (max-width: 25em) {
+      .footer__copyright {
+        flex-direction: column; } }
     .footer__copyright-year {
+      font-size: 3rem;
       color: #fff;
       margin-right: 2.5rem; }
+      @media only screen and (max-width: 25em) {
+        .footer__copyright-year {
+          font-size: 2rem;
+          align-self: center;
+          justify-self: center;
+          margin: 3rem 0; } }
     .footer__copyright-img {
-      width: 10%;
+      width: 20rem;
       margin-left: 2.5rem; }
+      @media only screen and (max-width: 25em) {
+        .footer__copyright-img {
+          margin-left: 0; } }
 
 .card {
   position: relative;
@@ -308,71 +358,85 @@ p {
     display: flex;
     flex-direction: column;
     margin: 10rem 0; }
-    .dev__skills__skill-1 {
+    @media only screen and (max-width: 25em) {
+      .dev__skills {
+        justify-content: center;
+        align-items: center; } }
+    .dev__skills__skill {
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin-bottom: 15rem; }
-      .dev__skills__skill-1 h3 {
+      @media only screen and (max-width: 25em) {
+        .dev__skills__skill {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 7.5rem; } }
+      .dev__skills__skill-1 h3, .dev__skills__skill-3 h3 {
         justify-self: center;
         padding-left: 5rem;
         margin-bottom: 5rem; }
-      .dev__skills__skill-1 img {
+        @media only screen and (max-width: 25em) {
+          .dev__skills__skill-1 h3, .dev__skills__skill-3 h3 {
+            padding-left: 0;
+            text-align: center; } }
+      .dev__skills__skill-1 img, .dev__skills__skill-3 img {
         width: 35%;
         grid-column: 1;
         justify-self: center;
         padding-left: 5rem; }
-      .dev__skills__skill-1 p {
+        @media only screen and (max-width: 25em) {
+          .dev__skills__skill-1 img, .dev__skills__skill-3 img {
+            padding-left: 0;
+            text-align: center; } }
+      .dev__skills__skill-1 p, .dev__skills__skill-3 p {
         justify-self: start;
         padding-right: 10rem;
         font-size: 2.5rem; }
-    .dev__skills__skill-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-bottom: 15rem; }
+        @media only screen and (max-width: 25em) {
+          .dev__skills__skill-1 p, .dev__skills__skill-3 p {
+            padding: 0 1rem;
+            text-align: center;
+            margin-top: 3rem; } }
       .dev__skills__skill-2 h3 {
         justify-self: center;
         grid-column: 2;
         padding-left: 5rem;
         margin-bottom: 5rem; }
+        @media only screen and (max-width: 25em) {
+          .dev__skills__skill-2 h3 {
+            padding-left: 0;
+            text-align: center; } }
       .dev__skills__skill-2 img {
         width: 35%;
         grid-column: 2;
         justify-self: center;
         padding-left: 5rem; }
+        @media only screen and (max-width: 25em) {
+          .dev__skills__skill-2 img {
+            padding-left: 0;
+            text-align: center; } }
       .dev__skills__skill-2 p {
         grid-column: 1;
         grid-row: 2;
         justify-self: start;
         padding-left: 10rem;
         font-size: 2.5rem; }
-    .dev__skills__skill-3 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-bottom: 15rem; }
-      .dev__skills__skill-3 h3 {
-        justify-self: center;
-        padding-left: 5rem;
-        margin-bottom: 5rem; }
-      .dev__skills__skill-3 img {
-        width: 35%;
-        grid-column: 1;
-        justify-self: center;
-        padding-left: 5rem;
-        top: 0;
-        left: 0; }
-      .dev__skills__skill-3 p {
-        justify-self: start;
-        padding-right: 10rem;
-        font-size: 2.5rem; }
-    .dev__skills__skill-4 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-bottom: 15rem; }
+        @media only screen and (max-width: 25em) {
+          .dev__skills__skill-2 p {
+            padding: 0 1rem;
+            text-align: center;
+            margin-top: 3rem; } }
       .dev__skills__skill-4 h3 {
         justify-self: center;
         align-self: center;
         grid-column: 2;
         margin-bottom: 5rem; }
+        @media only screen and (max-width: 25em) {
+          .dev__skills__skill-4 h3 {
+            padding-left: 0;
+            text-align: center; } }
       .dev__skills__skill-4 img {
         width: 35%;
         grid-column: 2;
@@ -380,12 +444,21 @@ p {
         align-self: center;
         padding-left: 5rem;
         border: #6EC362 1px solid; }
+        @media only screen and (max-width: 25em) {
+          .dev__skills__skill-4 img {
+            padding-left: 0;
+            text-align: center; } }
       .dev__skills__skill-4 p {
         grid-column: 1;
         grid-row: 2;
         justify-self: start;
         padding-left: 10rem;
         font-size: 2.5rem; }
+        @media only screen and (max-width: 25em) {
+          .dev__skills__skill-4 p {
+            padding: 0 1rem;
+            text-align: center;
+            margin-top: 3rem; } }
         .dev__skills__skill-4 p a {
           background-image: linear-gradient(to right, #01AAE4, #6EC362);
           -webkit-background-clip: text;

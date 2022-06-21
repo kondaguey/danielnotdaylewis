@@ -7,30 +7,49 @@
 
   background-color: $color-grey-light;
   padding-left: 3rem; 
+  @include respond(mobile-port) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-bottom: 2.8rem;
+    margin-bottom: 10rem;
+    
+  }
 
   &__logo {
     width: 20rem;
     height: auto;
     @include respond(mobile-port) {
-      width: 8rem;
+      width: 25rem;
       height: auto;
     }
   }
 
   &__header {
-    font-size: 2.7rem;
+    font-size: 3rem;
+    width: 100%;
     font-family: $font-1;
     text-transform: uppercase;
     letter-spacing: .3rem;
     background-image: linear-gradient(to right, $color-primary, $color-secondary);
     -webkit-background-clip: text;
     color: transparent;
-    padding-left: 60rem;
-    @include respond(mobile-port) {
-      font-size: 3rem;
-      letter-spacing: .2rem;
+    padding-left: 50rem;
+
+    @include respond(mobile-land_tab-port) {
+      padding-left: 5rem;
+      font-size: 2.7rem;
     }
     
+    @include respond(mobile-port) {
+      font-size: 2.5rem;
+      letter-spacing: .2rem;
+      padding-left: 0;
+      align-self: center;
+      justify-self: center;
+      text-align: center;
+    }
   }
 
   &__links {
@@ -39,8 +58,11 @@
     justify-content: flex-end;
     
     &__item {
-
       padding-right: 10rem;
+
+      @include respond(mobile-port) {
+        padding-right: 0;
+      }
 
       &-button {
         display: flex;
@@ -59,6 +81,14 @@
         padding: 1rem;
         margin: .5rem;
 
+        @include respond(mobile-port) {
+          align-self: center;
+          width: 8rem;
+          height: 8rem;
+          margin-top: 5rem;
+          
+        }
+
         &:hover {
           filter: brightness(1.2); 
           color: $color-tertiary
@@ -75,6 +105,10 @@
           border-radius: 1rem;
           padding: 1rem;
           transform: translate(-27%,5%);
+          
+          @include respond (mobile-port) {
+            transform: translate(-13%, 0);
+          }
 
           &--item {
             padding: 1rem;
