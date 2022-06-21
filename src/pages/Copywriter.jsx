@@ -15,7 +15,7 @@ function Copywriter() {
     </div>
 
     <div className="copy__document">
-      <iframe title="pdf" src= {embedURL} width="900" height="1150"></iframe>
+      <iframe title="pdf" src= {embedURL} width="900" height="1150"></iframe> 
     </div>
 
     <div className="copy__audio">

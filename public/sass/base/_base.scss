@@ -30,10 +30,7 @@ a:hover,a:active {
 
 .main-grid {
     display: grid;
-    grid-template-rows: 20vh min-content 40vh;
+    grid-template-rows: repeat(3, min-content);
     grid-template-columns: minmax(min-content, 100vw);
-    
-    @include respond(mobile-port) {
-        grid-template-rows: max-content min-content 40vh;
-    }
+
 }

@@ -1,16 +1,20 @@
 .copy {
 
-  display: flex;
-  flex-direction: column;
+
   align-items: center;
   margin-bottom: 5rem;
+
+  display: grid;
+  grid-template-rows: min-content min-content min-content min-content;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 18rem)[col-end]) [center-end] 1fr [full-end];
   
   &__header {
     margin-top: 10rem;
-    
+    grid-column: center-start / center-end;
 
     &-title {
       align-self: center;
+      text-align: center;
     }
 
     &-subtitle {
@@ -22,21 +26,24 @@
 
   &__document {
     margin-top: 5rem;
+    grid-column: center-start / center-end;
+    justify-self: center;
 
     @include respond(mobile-port) {
       margin: 5rem 5rem;
     }
     iframe{
       border: $color-primary 1px solid;
+  
     }
   }
   
-
   &__audio {
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
     margin: 0 25rem;
+    grid-column: center-start / center-end;
     @include respond(mobile-port) {
       margin: 0 14rem;
     }
@@ -54,7 +61,7 @@
   }
 
   &__feedback {
-
+    grid-column: center-start / center-end;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,5 +74,4 @@
       }
     }
   }
-  
 }

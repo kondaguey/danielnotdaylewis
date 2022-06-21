@@ -99,11 +99,8 @@ a:hover, a:active {
 
 .main-grid {
   display: grid;
-  grid-template-rows: 20vh min-content 40vh;
+  grid-template-rows: repeat(3, min-content);
   grid-template-columns: minmax(min-content, 100vw); }
-  @media only screen and (max-width: 27em) {
-    .main-grid {
-      grid-template-rows: max-content min-content 40vh; } }
 
 h1 {
   font-size: 7rem;
@@ -525,20 +522,25 @@ p {
       height: auto; }
 
 .copy {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-rows: min-content min-content min-content min-content;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 18rem) [col-end]) [center-end] 1fr [full-end]; }
   .copy__header {
-    margin-top: 10rem; }
+    margin-top: 10rem;
+    grid-column: center-start / center-end; }
     .copy__header-title {
-      align-self: center; }
+      align-self: center;
+      text-align: center; }
     .copy__header-subtitle {
       margin-top: 6rem;
       font-size: 5rem;
       text-align: center; }
   .copy__document {
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    grid-column: center-start / center-end;
+    justify-self: center; }
     @media only screen and (max-width: 27em) {
       .copy__document {
         margin: 5rem 5rem; } }
@@ -548,7 +550,8 @@ p {
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
-    margin: 0 25rem; }
+    margin: 0 25rem;
+    grid-column: center-start / center-end; }
     @media only screen and (max-width: 27em) {
       .copy__audio {
         margin: 0 14rem; } }
@@ -559,6 +562,7 @@ p {
       align-self: center;
       width: 50%; }
   .copy__feedback {
+    grid-column: center-start / center-end;
     display: flex;
     flex-direction: column;
     justify-content: center;
