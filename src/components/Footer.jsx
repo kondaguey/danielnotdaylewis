@@ -11,10 +11,10 @@ function Footer() {
       
       <ul className="footer__nav">
         <li className="footer__nav__item">
-          <a href="#" className="footer__nav__item-link">Privacy Policy</a>
+          <a href="/privacypolicy" className="footer__nav__item-link">Privacy Policy</a>
         </li>
         <li className="footer__nav__item">
-          <a href="#" className="footer__nav__item-link">Collab</a>
+          <a href="/collab" className="footer__nav__item-link">Collab / Hire before taken</a>
         </li>
         <li className="footer__nav__item">
           <a href="https://github.com/kondaguey" className="footer__nav__item-link" target="_blank" rel="noreferrer" >

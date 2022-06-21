@@ -639,3 +639,43 @@ p {
       @media only screen and (max-width: 27em) {
         .copy__feedback img {
           width: 100%; } }
+
+.collab {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  width: 23vw;
+  height: 50vh;
+  margin: 5rem;
+  overflow: hidden;
+  border-radius: .5rem;
+  transition: all .3s ease;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to right bottom, #01AAE4, #6EC362); }
+  @media only screen and (max-width: 27em) {
+    .collab {
+      width: 25rem;
+      height: 30rem;
+      margin-bottom: 10rem; } }
+  .collab:hover, .collab:active {
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3); }
+  .collab a {
+    justify-self: center;
+    align-self: center; }
+  .collab h3 {
+    justify-self: center;
+    align-self: center;
+    font-size: 5rem;
+    font-family: "Raleway", sans-serif;
+    color: #fff; }
+    @media only screen and (max-width: 27em) {
+      .collab h3 {
+        font-size: 2rem; } }
+
+.pp {
+  display: grid; }
+  .pp p {
+    font-size: 2rem;
+    text-align: center;
+    padding: 5rem; }
