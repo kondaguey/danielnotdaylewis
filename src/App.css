@@ -105,7 +105,7 @@ h3 {
 
 p {
   font-size: 2.3rem; }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 27em) {
     p {
       font-size: 3.5rem; } }
 
@@ -116,7 +116,7 @@ p {
   justify-content: space-around;
   background-color: #E4E4E7;
   padding-left: 3rem; }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 27em) {
     .menu-bar {
       flex-direction: column;
       justify-content: center;
@@ -127,7 +127,7 @@ p {
   .menu-bar__logo {
     width: 20rem;
     height: auto; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 27em) {
       .menu-bar__logo {
         width: 25rem;
         height: auto; } }
@@ -145,7 +145,7 @@ p {
       .menu-bar__header {
         padding-left: 5rem;
         font-size: 2.7rem; } }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 27em) {
       .menu-bar__header {
         font-size: 2.5rem;
         letter-spacing: .2rem;
@@ -159,7 +159,7 @@ p {
     justify-content: flex-end; }
     .menu-bar__links__item {
       padding-right: 10rem; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 27em) {
         .menu-bar__links__item {
           padding-right: 0; } }
       .menu-bar__links__item-button {
@@ -174,7 +174,7 @@ p {
         border-radius: 50%/50%;
         padding: 1rem;
         margin: .5rem; }
-        @media only screen and (max-width: 25em) {
+        @media only screen and (max-width: 27em) {
           .menu-bar__links__item-button {
             align-self: center;
             width: 8rem;
@@ -194,7 +194,7 @@ p {
           border-radius: 1rem;
           padding: 1rem;
           transform: translate(-27%, 5%); }
-          @media only screen and (max-width: 25em) {
+          @media only screen and (max-width: 27em) {
             .menu-bar__links__item-button-dropdown {
               transform: translate(-13%, 0); } }
           .menu-bar__links__item-button-dropdown--item {
@@ -212,7 +212,7 @@ p {
 .footer {
   background-color: #5D5558;
   grid-column: 1 / -1; }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 27em) {
     .footer {
       display: flex;
       flex-direction: column;
@@ -223,7 +223,7 @@ p {
     justify-content: space-around;
     align-items: center;
     padding-top: 2rem; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 27em) {
       .footer__nav {
         display: flex;
         flex-direction: column;
@@ -251,14 +251,14 @@ p {
     align-items: center;
     margin-right: auto;
     margin-left: auto; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 27em) {
       .footer__copyright {
         flex-direction: column; } }
     .footer__copyright-year {
       font-size: 3rem;
       color: #fff;
       margin-right: 2.5rem; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 27em) {
         .footer__copyright-year {
           font-size: 2rem;
           align-self: center;
@@ -267,7 +267,7 @@ p {
     .footer__copyright-img {
       width: 20rem;
       margin-left: 2.5rem; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 27em) {
         .footer__copyright-img {
           margin-left: 0; } }
 
@@ -358,7 +358,7 @@ p {
     display: flex;
     flex-direction: column;
     margin: 10rem 0; }
-    @media only screen and (max-width: 25em) {
+    @media only screen and (max-width: 27em) {
       .dev__skills {
         justify-content: center;
         align-items: center; } }
@@ -366,7 +366,7 @@ p {
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin-bottom: 15rem; }
-      @media only screen and (max-width: 25em) {
+      @media only screen and (max-width: 27em) {
         .dev__skills__skill {
           display: flex;
           flex-direction: column;
@@ -377,7 +377,7 @@ p {
         justify-self: center;
         padding-left: 5rem;
         margin-bottom: 5rem; }
-        @media only screen and (max-width: 25em) {
+        @media only screen and (max-width: 27em) {
           .dev__skills__skill-1 h3, .dev__skills__skill-3 h3 {
             padding-left: 0;
             text-align: center; } }
@@ -386,7 +386,7 @@ p {
         grid-column: 1;
         justify-self: center;
         padding-left: 5rem; }
-        @media only screen and (max-width: 25em) {
+        @media only screen and (max-width: 27em) {
           .dev__skills__skill-1 img, .dev__skills__skill-3 img {
             padding-left: 0;
             text-align: center; } }
@@ -394,7 +394,7 @@ p {
         justify-self: start;
         padding-right: 10rem;
         font-size: 2.5rem; }
-        @media only screen and (max-width: 25em) {
+        @media only screen and (max-width: 27em) {
           .dev__skills__skill-1 p, .dev__skills__skill-3 p {
             padding: 0 1rem;
             text-align: center;
@@ -404,7 +404,7 @@ p {
         grid-column: 2;
         padding-left: 5rem;
         margin-bottom: 5rem; }
-        @media only screen and (max-width: 25em) {
+        @media only screen and (max-width: 27em) {
           .dev__skills__skill-2 h3 {
             padding-left: 0;
             text-align: center; } }
@@ -413,7 +413,7 @@ p {
         grid-column: 2;
         justify-self: center;
         padding-left: 5rem; }
-        @media only screen and (max-width: 25em) {
+        @media only screen and (max-width: 27em) {
           .dev__skills__skill-2 img {
             padding-left: 0;
             text-align: center; } }
@@ -423,7 +423,7 @@ p {
         justify-self: start;
         padding-left: 10rem;
         font-size: 2.5rem; }
-        @media only screen and (max-width: 25em) {
+        @media only screen and (max-width: 27em) {
           .dev__skills__skill-2 p {
             padding: 0 1rem;
             text-align: center;
@@ -433,7 +433,7 @@ p {
         align-self: center;
         grid-column: 2;
         margin-bottom: 5rem; }
-        @media only screen and (max-width: 25em) {
+        @media only screen and (max-width: 27em) {
           .dev__skills__skill-4 h3 {
             padding-left: 0;
             text-align: center; } }
@@ -444,7 +444,7 @@ p {
         align-self: center;
         padding-left: 5rem;
         border: #6EC362 1px solid; }
-        @media only screen and (max-width: 25em) {
+        @media only screen and (max-width: 27em) {
           .dev__skills__skill-4 img {
             padding-left: 0;
             text-align: center; } }
@@ -454,7 +454,7 @@ p {
         justify-self: start;
         padding-left: 10rem;
         font-size: 2.5rem; }
-        @media only screen and (max-width: 25em) {
+        @media only screen and (max-width: 27em) {
           .dev__skills__skill-4 p {
             padding: 0 1rem;
             text-align: center;
