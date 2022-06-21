@@ -62,6 +62,18 @@
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: #A29FA8; } }
+
 *,
 *::after,
 *::before {
@@ -112,6 +124,16 @@ p {
   @media only screen and (max-width: 27em) {
     p {
       font-size: 3.5rem; } }
+
+.typewriter-font {
+  font-family: 'Special Elite', cursive;
+  overflow: hidden;
+  border-right: .5rem solid black;
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .5rem;
+  /* Adjust as needed */
+  animation: typing 1.5s steps(25, end), blink-caret 0.9s step-end infinite; }
 
 .menu-bar {
   grid-column: 1 / -1;
@@ -499,7 +521,45 @@ p {
       width: 100%; }
 
 .copy {
-  display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  grid-template-columns: repeat(10, 1fr);
-  grid-gap: 1rem; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem; }
+  .copy__header {
+    margin-top: 10rem; }
+    .copy__header-title {
+      align-self: center; }
+    .copy__header-subtitle {
+      margin-top: 6rem;
+      font-size: 5rem;
+      text-align: center; }
+  .copy__document {
+    margin-top: 5rem; }
+    @media only screen and (max-width: 27em) {
+      .copy__document {
+        margin: 5rem 5rem; } }
+    .copy__document iframe {
+      border: #01AAE4 1px solid; }
+  .copy__audio {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 25rem; }
+    @media only screen and (max-width: 27em) {
+      .copy__audio {
+        margin: 0 14rem; } }
+    .copy__audio p {
+      text-align: center; }
+    .copy__audio-clip {
+      margin: 3rem 0;
+      align-self: center; }
+  .copy__feedback {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .copy__feedback img {
+      width: 75%; }
+      @media only screen and (max-width: 27em) {
+        .copy__feedback img {
+          width: 100%; } }

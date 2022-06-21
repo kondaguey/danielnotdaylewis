@@ -1,0 +1,71 @@
+.copy {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+  
+  &__header {
+    margin-top: 10rem;
+    
+
+    &-title {
+      align-self: center;
+    }
+
+    &-subtitle {
+      margin-top: 6rem;
+      font-size: 5rem;
+      text-align: center;
+    }
+  }
+
+  &__document {
+    margin-top: 5rem;
+
+    @include respond(mobile-port) {
+      margin: 5rem 5rem;
+    }
+    iframe{
+      border: $color-primary 1px solid;
+    }
+  }
+  
+
+  &__audio {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 25rem;
+    @include respond(mobile-port) {
+      margin: 0 14rem;
+    }
+
+    p{
+      text-align: center;
+      
+    }
+
+    &-clip {
+      margin: 3rem 0;
+      
+      align-self: center;
+    }
+  }
+
+  &__feedback {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 75%;
+      @include respond(mobile-port) {
+        width: 100%;
+      }
+    }
+  }
+  
+}
