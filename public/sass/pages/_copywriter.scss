@@ -1,16 +1,17 @@
 .copy {
 
-
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  
   margin-bottom: 5rem;
 
-  display: grid;
-  grid-template-rows: min-content min-content min-content min-content;
-  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 18rem)[col-end]) [center-end] 1fr [full-end];
-  
   &__header {
     margin-top: 10rem;
-    grid-column: center-start / center-end;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &-title {
       align-self: center;
@@ -26,7 +27,7 @@
 
   &__document {
     margin-top: 5rem;
-    grid-column: center-start / center-end;
+    grid-column: 3 / 9;
     justify-self: center;
 
     @include respond(mobile-port) {
@@ -50,13 +51,13 @@
 
     p{
       text-align: center;
-      
     }
 
     &-clip {
       margin: 3rem 0;
       align-self: center;
-      width: 50%;
+      flex-shrink: 1;
+      
     }
   }
 
@@ -68,7 +69,7 @@
     align-items: center;
 
     img {
-      width: 75%;
+      width: 50%;
       @include respond(mobile-port) {
         width: 100%;
       }

@@ -99,8 +99,7 @@ a:hover, a:active {
 
 .main-grid {
   display: grid;
-  grid-template-rows: repeat(3, min-content);
-  grid-template-columns: minmax(min-content, 100vw); }
+  grid-template-rows: repeat(3, min-content); }
 
 h1 {
   font-size: 7rem;
@@ -203,8 +202,8 @@ p {
         @media only screen and (max-width: 27em) {
           .menu-bar__links__item-button {
             align-self: center;
-            width: 8rem;
-            height: 8rem;
+            width: 5rem;
+            height: 5rem;
             margin-top: 5rem; } }
         .menu-bar__links__item-button:hover {
           filter: brightness(1.2);
@@ -366,18 +365,61 @@ p {
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3); }
 
 .home {
-  grid-column: 2 / 9;
   display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  grid-template-columns: repeat(10, 1fr);
-  grid-gap: 1rem; }
-  @media only screen and (max-width: 62.5em) {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr min-content;
+  grid-gap: 10rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10rem 5rem; }
+  @media only screen and (max-width: 27em) {
     .home {
-      grid-template-rows: 75vh; } }
+      padding: 0; } }
+  .home__milkshake {
+    grid-column: 1 / -1; }
+    .home__milkshake h3 {
+      font-size: 12rem; }
+      @media only screen and (max-width: 27em) {
+        .home__milkshake h3 {
+          font-size: 8rem; } }
+    .home__milkshake h4 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 5rem;
+      padding: 5rem 0; }
+      @media only screen and (max-width: 27em) {
+        .home__milkshake h4 {
+          font-size: 2.5rem;
+          padding: 4rem 0; } }
+    .home__milkshake p {
+      padding: 3rem 0; }
+      @media only screen and (max-width: 27em) {
+        .home__milkshake p {
+          font-size: 2.5rem;
+          padding: 3rem 1rem; } }
+    .home__milkshake img {
+      width: 10rem;
+      animation: shake 3s infinite; }
+  .home__select {
+    grid-column: 1 / -1;
+    align-items: start;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem; }
+    @media only screen and (max-width: 27em) {
+      .home__select {
+        flex-direction: column;
+        align-items: center; } }
+    @media only screen and (max-width: 27em) {
+      .home__select a {
+        padding: 2rem 0; }
+        .home__select a:not(:last-child) {
+          border-bottom: 1px solid #E4E4E7; } }
+    .home__select a img {
+      width: 10rem; }
 
 .dev {
   display: grid;
-  grid-template-rows: min-content min-content min-content min-content;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 18rem) [col-end]) [center-end] 1fr [full-end]; }
   .dev__header {
     grid-column: center-start / center-end;
@@ -521,15 +563,40 @@ p {
       width: 100%;
       height: auto; }
 
-.copy {
+.actor {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 5rem;
-  display: grid;
-  grid-template-rows: min-content min-content min-content min-content;
-  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 18rem) [col-end]) [center-end] 1fr [full-end]; }
+  padding: 10rem 20rem; }
+  .actor__heading {
+    font-size: 8rem;
+    padding-top: 2rem;
+    align-self: center;
+    text-align: center; }
+  .actor__subheading {
+    font-size: 5rem;
+    padding-top: 5rem;
+    align-self: center;
+    text-align: center; }
+  .actor__paragraph {
+    font-size: 3rem;
+    padding: 5rem;
+    align-self: center;
+    text-align: center; }
+    @media only screen and (max-width: 27em) {
+      .actor__paragraph {
+        padding: 5rem 0 0 0; } }
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem; }
   .copy__header {
     margin-top: 10rem;
-    grid-column: center-start / center-end; }
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     .copy__header-title {
       align-self: center;
       text-align: center; }
@@ -539,7 +606,7 @@ p {
       text-align: center; }
   .copy__document {
     margin-top: 5rem;
-    grid-column: center-start / center-end;
+    grid-column: 3 / 9;
     justify-self: center; }
     @media only screen and (max-width: 27em) {
       .copy__document {
@@ -560,7 +627,7 @@ p {
     .copy__audio-clip {
       margin: 3rem 0;
       align-self: center;
-      width: 50%; }
+      flex-shrink: 1; }
   .copy__feedback {
     grid-column: center-start / center-end;
     display: flex;
@@ -568,7 +635,7 @@ p {
     justify-content: center;
     align-items: center; }
     .copy__feedback img {
-      width: 75%; }
+      width: 50%; }
       @media only screen and (max-width: 27em) {
         .copy__feedback img {
           width: 100%; } }
