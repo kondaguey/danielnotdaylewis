@@ -10,6 +10,7 @@
   flex-direction: column;
   border: $color-tertiary solid 2px;
   transition: all .2s ease;
+
   
   &__picture {
 
@@ -30,6 +31,9 @@
 
   &__subtitle {
     padding: 1rem 3rem;
+    @include respond(mobile-port) {
+      height: fit-content;
+    }
     ul {
       list-style: none;
       width: 80%;
@@ -41,6 +45,9 @@
         @include themeGradient;
         &:not(:last-child) {
           border-bottom: 1px solid $color-grey-light;
+        }
+        @include respond(mobile-port) {
+          font-size: 2rem;
         }
       }
     }
@@ -55,7 +62,14 @@
     position: absolute;
     top: 20rem;
     right: 1rem;
-    
+    font-family: $font-2;
+
+    @include respond(mobile-port) {
+      font-size: 1.5rem;
+      top: 10rem;
+
+    }
+
     background-image: linear-gradient(to right bottom, $color-primary, $color-secondary);
     &-span {
       padding: 1rem 1.5rem;

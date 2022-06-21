@@ -91,20 +91,24 @@ a:hover, a:active {
   grid-template-columns: minmax(min-content, 100vw); }
 
 h1 {
-  font-size: 7rem; }
+  font-size: 7rem;
+  font-family: "Montserrat", sans-serif; }
 
 h2 {
   font-size: 7rem;
+  font-family: "Montserrat", sans-serif;
   color: #ACDBDB; }
 
 h3 {
   font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
   background-image: linear-gradient(to right, #01AAE4, #6EC362);
   -webkit-background-clip: text;
   color: transparent; }
 
 p {
-  font-size: 2.3rem; }
+  font-size: 2.3rem;
+  font-family: "Raleway", sans-serif; }
   @media only screen and (max-width: 27em) {
     p {
       font-size: 3.5rem; } }
@@ -296,6 +300,9 @@ p {
       width: 100%; }
   .card__subtitle {
     padding: 1rem 3rem; }
+    @media only screen and (max-width: 27em) {
+      .card__subtitle {
+        height: fit-content; } }
     .card__subtitle ul {
       list-style: none;
       width: 80%;
@@ -309,6 +316,9 @@ p {
         color: transparent; }
         .card__subtitle ul li:not(:last-child) {
           border-bottom: 1px solid #E4E4E7; }
+        @media only screen and (max-width: 27em) {
+          .card__subtitle ul li {
+            font-size: 2rem; } }
   .card__heading {
     font-size: 3.5rem;
     font-weight: 300;
@@ -318,7 +328,12 @@ p {
     position: absolute;
     top: 20rem;
     right: 1rem;
+    font-family: "Raleway", sans-serif;
     background-image: linear-gradient(to right bottom, #01AAE4, #6EC362); }
+    @media only screen and (max-width: 27em) {
+      .card__heading {
+        font-size: 1.5rem;
+        top: 10rem; } }
     .card__heading-span {
       padding: 1rem 1.5rem;
       box-decoration-break: clone;
