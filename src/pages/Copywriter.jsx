@@ -20,8 +20,9 @@ function Copywriter() {
 
     <div className="copy__audio">
 
-      <p>. . . being that I'm also a proferssional voice actor, I even threw in a bonus voiceover of the article for the client. On the house.</p>
-      <ReactAudioPlayer className="copy__audio-clip" src="./media/sample-audio.mp3" controls />
+      <p>. . . being that I'm also a proferssional voice actor, I even decided to throw in a bonus voiceover of the article for the client. On the house.</p>
+      <audio controls className="copy__audio-clip" c src="./media/sample-audio.mp3"></audio>
+      
     </div>
 
     <div className="copy__feedback">

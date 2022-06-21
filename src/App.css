@@ -99,8 +99,11 @@ a:hover, a:active {
 
 .main-grid {
   display: grid;
-  grid-template-rows: min-content  min-content min-content;
+  grid-template-rows: 20vh min-content 40vh;
   grid-template-columns: minmax(min-content, 100vw); }
+  @media only screen and (max-width: 27em) {
+    .main-grid {
+      grid-template-rows: max-content min-content 40vh; } }
 
 h1 {
   font-size: 7rem;
@@ -518,7 +521,8 @@ p {
     grid-column: 1 / -1;
     margin-top: 10rem; }
     .dev__construct img {
-      width: 100%; }
+      width: 100%;
+      height: auto; }
 
 .copy {
   display: flex;
@@ -552,7 +556,8 @@ p {
       text-align: center; }
     .copy__audio-clip {
       margin: 3rem 0;
-      align-self: center; }
+      align-self: center;
+      width: 50%; }
   .copy__feedback {
     display: flex;
     flex-direction: column;
