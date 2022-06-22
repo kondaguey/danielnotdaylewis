@@ -1,21 +1,22 @@
 .copy {
-
   display: flex;
+  
   flex-direction: column;
   align-items: center;
   
   margin-bottom: 5rem;
 
   &__header {
-    margin-top: 10rem;
-    
     display: flex;
+    align-self: center;
+    margin-top: 10rem;
     flex-direction: column;
     align-items: center;
-
+    
     &-title {
-      align-self: center;
-      text-align: center;
+      // align-self: center;
+      // text-align: center;
+      justify-self: stretch;
     }
 
     &-subtitle {
@@ -49,27 +50,36 @@
       margin: 0 14rem;
     }
 
+    audio {
+       align-self: stretch; 
+       width: 100%;
+    }
+
     p{
       text-align: center;
+      font-weight: 400 !important;
     }
 
     &-clip {
       margin: 3rem 0;
       align-self: center;
-      flex-shrink: 1;
+
       
     }
   }
 
   &__feedback {
-    grid-column: center-start / center-end;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
+    p{
+      font-weight: 400 !important;
+    }
+    
     img {
-      width: 50%;
+      width: 90%;
       @include respond(mobile-port) {
         width: 100%;
       }

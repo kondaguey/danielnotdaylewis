@@ -620,13 +620,13 @@ p {
   align-items: center;
   margin-bottom: 5rem; }
   .copy__header {
-    margin-top: 10rem;
     display: flex;
+    align-self: center;
+    margin-top: 10rem;
     flex-direction: column;
     align-items: center; }
     .copy__header-title {
-      align-self: center;
-      text-align: center; }
+      justify-self: stretch; }
     .copy__header-subtitle {
       margin-top: 6rem;
       font-size: 5rem;
@@ -649,20 +649,24 @@ p {
     @media only screen and (max-width: 27em) {
       .copy__audio {
         margin: 0 14rem; } }
+    .copy__audio audio {
+      align-self: stretch;
+      width: 100%; }
     .copy__audio p {
-      text-align: center; }
+      text-align: center;
+      font-weight: 400 !important; }
     .copy__audio-clip {
       margin: 3rem 0;
-      align-self: center;
-      flex-shrink: 1; }
+      align-self: center; }
   .copy__feedback {
-    grid-column: center-start / center-end;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .copy__feedback p {
+      font-weight: 400 !important; }
     .copy__feedback img {
-      width: 50%; }
+      width: 90%; }
       @media only screen and (max-width: 27em) {
         .copy__feedback img {
           width: 100%; } }
