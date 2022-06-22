@@ -23,18 +23,23 @@
 
     h4 {
       font-family: $font-1;
+      font-weight: 400;
       font-size: 5rem;
       padding: 5rem 0;
+      line-height: 1.2;
       @include respond(mobile-port) {
         font-size: 2.5rem;
         padding: 4rem 0;
+        line-height: 1.5;
       }
     }
 
     p {
       padding: 3rem 0;
+      letter-spacing: .5rem;
+      font-weight: 400 !important;
       @include respond(mobile-port) {
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding: 3rem 1rem;
       }
     }
@@ -57,18 +62,21 @@
     }
 
     a {
-
+      border: $color-tertiary 1px solid;
+      transition: all .2s;
+      @include boxShadow;
       @include respond(mobile-port) {
         padding: 2rem 0;
-
         &:not(:last-child) {
           border-bottom: 1px solid $color-grey-light;
+          margin-bottom: 4rem;
         }
       }
-
       img {
-  
         width: 10rem;
+      }
+      &:hover {
+        transform: translateY(-.5rem);
       }
     }
   }

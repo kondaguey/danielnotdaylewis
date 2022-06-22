@@ -118,8 +118,9 @@ h3 {
   color: transparent; }
 
 p {
-  font-size: 2.3rem;
-  font-family: "Raleway", sans-serif; }
+  font-size: 2.5rem !important;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300 !important; }
   @media only screen and (max-width: 27em) {
     p {
       font-size: 3.5rem; } }
@@ -385,17 +386,22 @@ p {
           font-size: 8rem; } }
     .home__milkshake h4 {
       font-family: "Montserrat", sans-serif;
+      font-weight: 400;
       font-size: 5rem;
-      padding: 5rem 0; }
+      padding: 5rem 0;
+      line-height: 1.2; }
       @media only screen and (max-width: 27em) {
         .home__milkshake h4 {
           font-size: 2.5rem;
-          padding: 4rem 0; } }
+          padding: 4rem 0;
+          line-height: 1.5; } }
     .home__milkshake p {
-      padding: 3rem 0; }
+      padding: 3rem 0;
+      letter-spacing: .5rem;
+      font-weight: 400 !important; }
       @media only screen and (max-width: 27em) {
         .home__milkshake p {
-          font-size: 2.5rem;
+          font-size: 2rem;
           padding: 3rem 1rem; } }
     .home__milkshake img {
       width: 10rem;
@@ -410,13 +416,20 @@ p {
       .home__select {
         flex-direction: column;
         align-items: center; } }
-    @media only screen and (max-width: 27em) {
-      .home__select a {
-        padding: 2rem 0; }
-        .home__select a:not(:last-child) {
-          border-bottom: 1px solid #E4E4E7; } }
-    .home__select a img {
-      width: 10rem; }
+    .home__select a {
+      border: #ACDBDB 1px solid;
+      transition: all .2s;
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3); }
+      @media only screen and (max-width: 27em) {
+        .home__select a {
+          padding: 2rem 0; }
+          .home__select a:not(:last-child) {
+            border-bottom: 1px solid #E4E4E7;
+            margin-bottom: 4rem; } }
+      .home__select a img {
+        width: 10rem; }
+      .home__select a:hover {
+        transform: translateY(-0.5rem); }
 
 .dev {
   display: grid;
@@ -424,14 +437,20 @@ p {
   .dev__header {
     grid-column: center-start / center-end;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 7rem; }
     .dev__header h1 {
       background-image: linear-gradient(to right, #01AAE4, #6EC362);
       -webkit-background-clip: text;
       color: transparent;
-      animation: moveInBottom .7s ease-in;
-      justify-self: center; }
+      animation: moveInLeft .7s ease-in;
+      justify-self: center;
+      font-size: 5.5rem; }
+    .dev__header h2 {
+      animation: moveInRight .7s ease-in;
+      font-size: 3rem; }
   .dev__skills {
     grid-column: center-start / center-end;
     display: flex;
@@ -472,7 +491,8 @@ p {
       .dev__skills__skill-1 p, .dev__skills__skill-3 p {
         justify-self: start;
         padding-right: 10rem;
-        font-size: 2.5rem; }
+        font-size: 2.5rem;
+        font-weight: 400 !important; }
         @media only screen and (max-width: 27em) {
           .dev__skills__skill-1 p, .dev__skills__skill-3 p {
             padding: 0 1rem;
@@ -501,7 +521,8 @@ p {
         grid-row: 2;
         justify-self: start;
         padding-left: 10rem;
-        font-size: 2.5rem; }
+        font-size: 2.5rem;
+        font-weight: 400 !important; }
         @media only screen and (max-width: 27em) {
           .dev__skills__skill-2 p {
             padding: 0 1rem;
@@ -532,7 +553,8 @@ p {
         grid-row: 2;
         justify-self: start;
         padding-left: 10rem;
-        font-size: 2.5rem; }
+        font-size: 2.5rem;
+        font-weight: 400 !important; }
         @media only screen and (max-width: 27em) {
           .dev__skills__skill-4 p {
             padding: 0 1rem;
@@ -556,6 +578,8 @@ p {
     grid-gap: 5rem; }
     .dev__projects h2 {
       justify-self: center; }
+    .dev__projects__explainer {
+      text-align: center; }
   .dev__construct {
     grid-column: 1 / -1;
     margin-top: 10rem; }
@@ -573,6 +597,8 @@ p {
     padding-top: 2rem;
     align-self: center;
     text-align: center; }
+  .actor__resume h2 {
+    font-size: 2.2rem; }
   .actor__subheading {
     font-size: 5rem;
     padding-top: 5rem;
@@ -582,7 +608,8 @@ p {
     font-size: 3rem;
     padding: 5rem;
     align-self: center;
-    text-align: center; }
+    text-align: center;
+    font-weight: 400 !important; }
     @media only screen and (max-width: 27em) {
       .actor__paragraph {
         padding: 5rem 0 0 0; } }

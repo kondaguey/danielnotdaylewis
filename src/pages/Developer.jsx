@@ -9,6 +9,7 @@ function Developer() {
 
     <div className="dev__header">
       <h1>/developer</h1>
+      <a href="./media/ResumeDevelopment.pdf" target="_blank"><h2>resume</h2></a>
     </div>
 
     <div className="dev__skills">
@@ -41,6 +42,8 @@ function Developer() {
     <div className="dev__projects">
 
     <h2>portfolio</h2>
+
+    <p className="dev__projects__explainer">Aside from the projects listed below, this website itself is a living portfolio. It's a place for me to actively practice my craft of development and design in a safe place. As my skills and practice evolve, so will the website - becoming better and better with time. It's a direct reflection my my programming abilities in real-time, where I can also collect and share anything else I'm learning and evolving. <br/><br/>Ultimately, this could end up being a scaled enterprise app with functionality, with multiple businesses attached to it. The sky's the limit and I'm proud to make it my own.</p>
 
       <Card 
         project = "Rolling Real Estate"
