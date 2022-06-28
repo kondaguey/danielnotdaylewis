@@ -3,24 +3,21 @@ import MenuBarItem from "./MenuBarItem";
 import DropdownMenu from "./DropdownMenu";
 import { FiChevronDown } from "react-icons/fi";
 
-function MenuBar(props) { 
+function MenuBar(props) {
   return (
+    <div className="menu-bar">
+      <a href="/">
+        <img className="menu-bar__logo" src="./img/dndl-logo.png" alt="logo" />
+      </a>
 
-  <div className="menu-bar">
+      <span className="menu-bar__header">Daniel (not Day) Lewis</span>
 
-    <a href="/">
-      <img className="menu-bar__logo" src="./img/dndl-logo.png" alt="logo" />
-    </a>
-    
-    <span className="menu-bar__header">Daniel (not Day) Lewis</span>
-
-    <ul className= "menu-bar__links">
-      <MenuBarItem icon = { <FiChevronDown />}>
-        <DropdownMenu />
-      </MenuBarItem>
-    </ul>
-
-  </div>
+      <ul className="menu-bar__links">
+        <MenuBarItem icon={<FiChevronDown />}>
+          <DropdownMenu />
+        </MenuBarItem>
+      </ul>
+    </div>
   );
 }
 

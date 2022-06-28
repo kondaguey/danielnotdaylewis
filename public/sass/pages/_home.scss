@@ -36,7 +36,7 @@
 
     p {
       padding: 3rem 0;
-      letter-spacing: .5rem;
+      letter-spacing: 0.5rem;
       font-weight: 400 !important;
       @include respond(mobile-port) {
         font-size: 2rem;
@@ -63,7 +63,7 @@
 
     a {
       border: $color-tertiary 1px solid;
-      transition: all .2s;
+      transition: all 0.2s;
       @include boxShadow;
       @include respond(mobile-port) {
         padding: 2rem 0;
@@ -76,7 +76,7 @@
         width: 10rem;
       }
       &:hover {
-        transform: translateY(-.5rem);
+        transform: translateY(-0.5rem);
       }
     }
   }

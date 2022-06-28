@@ -1,48 +1,45 @@
 @import "./_mixins.scss";
 
 @keyframes shake {
-
   0% {
-      transform: rotate(0deg);
-      box-shadow: none;
+    transform: rotate(0deg);
+    box-shadow: none;
   }
   10% {
-      transform: rotate(14deg);
-      box-shadow: none;
+    transform: rotate(14deg);
+    box-shadow: none;
   }
   20% {
-      transform: rotate(-8deg);
-      box-shadow: none;
+    transform: rotate(-8deg);
+    box-shadow: none;
   }
   30% {
-      transform: rotate(14deg);
-      box-shadow: none;
+    transform: rotate(14deg);
+    box-shadow: none;
   }
   40% {
-      transform: rotate(-4.0deg);
-      box-shadow: none;
+    transform: rotate(-4deg);
+    box-shadow: none;
   }
   50% {
-      transform: rotate(10deg);
-      box-shadow: none;
+    transform: rotate(10deg);
+    box-shadow: none;
   }
   60% {
     transform: rotate(0deg);
     box-shadow: none;
-  } 
+  }
   100% {
     transform: rotate(0deg);
     box-shadow: none;
   }
-
 }
 
 @keyframes rise {
-
   0% {
     transform: scale(1);
   }
- 
+
   50% {
     transform: scale(1.2);
     @include boxShadow;
@@ -86,7 +83,6 @@
   }
 }
 
-
 @keyframes moveInBottom {
   0% {
     opacity: 0;
@@ -100,13 +96,21 @@
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink-caret {
-  from, to 
-  { border-color: transparent }
+  from,
+  to {
+    border-color: transparent;
+  }
 
-  50% { border-color: $color-grey-medium; }
+  50% {
+    border-color: $color-grey-medium;
+  }
 }

@@ -18,23 +18,21 @@ h3 {
 }
 
 p {
-  font-size: 2.5rem !important; 
+  font-size: 2.5rem !important;
   font-family: $font-2;
   font-weight: 300 !important;
-  
+
   @include respond(mobile-port) {
     font-size: 3.5rem;
   }
 }
 
 .typewriter-font {
-  font-family: 'Special Elite', cursive;
-  
+  font-family: "Special Elite", cursive;
+
   overflow: hidden;
-  border-right: .5rem solid black;
+  border-right: 0.5rem solid black;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .5rem; /* Adjust as needed */
-  animation: 
-    typing 1.5s steps(25, end),
-    blink-caret .9s step-end infinite;
+  letter-spacing: 0.5rem; /* Adjust as needed */
+  animation: typing 1.5s steps(25, end), blink-caret 0.9s step-end infinite;
 }
