@@ -141,15 +141,14 @@ p {
   grid-column: 1 / -1;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #e4e4e7;
   padding: 2rem; }
   @media only screen and (max-width: 27em) {
     .menu-bar {
       flex-direction: column;
-      justify-content: space-between;
-      align-items: space-between;
-      padding-left: 0;
+      justify-content: center;
+      align-items: center;
       padding-bottom: 3rem;
       margin-bottom: 5rem; } }
   .menu-bar__logo {
