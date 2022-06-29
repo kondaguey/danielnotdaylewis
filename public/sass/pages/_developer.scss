@@ -1,10 +1,12 @@
 .dev {
   display: grid;
   // grid-template-rows: min-content min-content min-content;
-  grid-template-columns: [full-start] 1fr [center-start] repeat(
+  grid-template-columns:
+    [full-start] 1fr [center-start] repeat(
       8,
       [col-start] minmax(min-content, 18rem) [col-end]
-    ) [center-end] 1fr [full-end];
+    )
+    [center-end] 1fr [full-end];
 
   &__header {
     grid-column: center-start / center-end;
@@ -51,6 +53,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 7.5rem;
+        text-align: left;
       }
 
       &-1,
@@ -59,9 +62,9 @@
           justify-self: center;
           padding-left: 5rem;
           margin-bottom: 5rem;
+          text-align: center;
           @include respond(mobile-port) {
             padding-left: 0;
-            text-align: center;
           }
         }
         img {
@@ -81,9 +84,19 @@
           font-weight: 400 !important;
           @include respond(mobile-port) {
             padding: 0 1rem;
-            text-align: center;
+            text-align: left;
             margin-top: 3rem;
           }
+        }
+        a {
+          @include themeGradient;
+          text-decoration: underline;
+        }
+
+        a:hover {
+          @include themeGradientReverse;
+
+          cursor: pointer;
         }
       }
 
@@ -117,9 +130,20 @@
           font-weight: 400 !important;
           @include respond(mobile-port) {
             padding: 0 1rem;
-            text-align: center;
+            text-align: left;
             margin-top: 3rem;
           }
+        }
+
+        a {
+          @include themeGradient;
+          text-decoration: underline;
+        }
+
+        a:hover {
+          @include themeGradientReverse;
+
+          cursor: pointer;
         }
       }
 
@@ -155,7 +179,7 @@
           font-weight: 400 !important;
           @include respond(mobile-port) {
             padding: 0 1rem;
-            text-align: center;
+            text-align: left;
             margin-top: 3rem;
           }
 
@@ -176,11 +200,14 @@
 
   &__projects {
     grid-row: 3 / 4;
-    grid-column: col-start 3 / col-end 6;
-
+    grid-column: center-start / center-end;
     display: grid;
     grid-template-rows: repeat(4, min-content);
     grid-gap: 5rem;
+    padding: 2rem 20rem;
+    @include respond(mobile-port) {
+      padding: 0 2rem;
+    }
 
     h2 {
       justify-self: center;

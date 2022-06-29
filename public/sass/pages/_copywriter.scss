@@ -28,7 +28,7 @@
 
   &__document {
     display: grid;
-    grid-template-columns: max-width;
+    grid-template-columns: max-content;
     margin-top: 5rem;
     grid-column: 3 / 9;
     justify-self: stretch;

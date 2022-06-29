@@ -406,6 +406,7 @@ p {
           font-size: 2rem;
           padding: 3rem 1rem; } }
     .home__milkshake img {
+      padding-top: 2rem;
       width: 10rem;
       animation: shake 3s infinite; }
   .home__select {
@@ -472,15 +473,16 @@ p {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          margin-bottom: 7.5rem; } }
+          margin-bottom: 7.5rem;
+          text-align: left; } }
       .dev__skills__skill-1 h3, .dev__skills__skill-3 h3 {
         justify-self: center;
         padding-left: 5rem;
-        margin-bottom: 5rem; }
+        margin-bottom: 5rem;
+        text-align: center; }
         @media only screen and (max-width: 27em) {
           .dev__skills__skill-1 h3, .dev__skills__skill-3 h3 {
-            padding-left: 0;
-            text-align: center; } }
+            padding-left: 0; } }
       .dev__skills__skill-1 img, .dev__skills__skill-3 img {
         width: 35%;
         grid-column: 1;
@@ -498,8 +500,18 @@ p {
         @media only screen and (max-width: 27em) {
           .dev__skills__skill-1 p, .dev__skills__skill-3 p {
             padding: 0 1rem;
-            text-align: center;
+            text-align: left;
             margin-top: 3rem; } }
+      .dev__skills__skill-1 a, .dev__skills__skill-3 a {
+        background-image: linear-gradient(to right, #01aae4, #6ec362);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-decoration: underline; }
+      .dev__skills__skill-1 a:hover, .dev__skills__skill-3 a:hover {
+        background-image: linear-gradient(to right, #6ec362, #01aae4);
+        -webkit-background-clip: text;
+        color: transparent;
+        cursor: pointer; }
       .dev__skills__skill-2 h3 {
         justify-self: center;
         grid-column: 2;
@@ -528,8 +540,18 @@ p {
         @media only screen and (max-width: 27em) {
           .dev__skills__skill-2 p {
             padding: 0 1rem;
-            text-align: center;
+            text-align: left;
             margin-top: 3rem; } }
+      .dev__skills__skill-2 a {
+        background-image: linear-gradient(to right, #01aae4, #6ec362);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-decoration: underline; }
+      .dev__skills__skill-2 a:hover {
+        background-image: linear-gradient(to right, #6ec362, #01aae4);
+        -webkit-background-clip: text;
+        color: transparent;
+        cursor: pointer; }
       .dev__skills__skill-4 h3 {
         justify-self: center;
         align-self: center;
@@ -560,7 +582,7 @@ p {
         @media only screen and (max-width: 27em) {
           .dev__skills__skill-4 p {
             padding: 0 1rem;
-            text-align: center;
+            text-align: left;
             margin-top: 3rem; } }
         .dev__skills__skill-4 p a {
           background-image: linear-gradient(to right, #01aae4, #6ec362);
@@ -574,10 +596,14 @@ p {
           cursor: pointer; }
   .dev__projects {
     grid-row: 3 / 4;
-    grid-column: col-start 3 / col-end 6;
+    grid-column: center-start / center-end;
     display: grid;
     grid-template-rows: repeat(4, min-content);
-    grid-gap: 5rem; }
+    grid-gap: 5rem;
+    padding: 2rem 20rem; }
+    @media only screen and (max-width: 27em) {
+      .dev__projects {
+        padding: 0 2rem; } }
     .dev__projects h2 {
       justify-self: center; }
     .dev__projects__explainer {
@@ -645,7 +671,7 @@ p {
       text-align: center; }
   .copy__document {
     display: grid;
-    grid-template-columns: max-width;
+    grid-template-columns: max-content;
     margin-top: 5rem;
     grid-column: 3 / 9;
     justify-self: stretch;

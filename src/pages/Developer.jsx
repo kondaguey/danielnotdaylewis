@@ -20,7 +20,7 @@ function Developer() {
           <p>
             I've taken great time and effort to work with this pre-processor in
             an advanced fashion. My styling workflow looks like a nice combo of
-            the 7-1 Sass file architecture with BEM-naming conventions.
+            the <a href="https://www.learnhowtoprogram.com/user-interfaces/building-layouts-preprocessors/7-1-sass-architecture" target="_blank">7-1 Sass file architecture</a> with <a href="http://getbem.com/naming/" target="_blank">BEM-naming conventions</a>.
           </p>
         </div>
 
@@ -28,7 +28,7 @@ function Developer() {
           <h3>JS Stack</h3>
           <img src="./img/tech-logo-2.png" alt="img" />
           <p>
-            With vanilla Javascript down, I chose ReactJS as my go-to frontend
+            With <a href="https://stackoverflow.com/questions/20435653/what-is-vanillajs" target="_blank">Vanilla Javascript</a>  down, I chose <a href="https://en.wikipedia.org/wiki/React_(JavaScript_library)" target="_blank">ReactJS</a> as my go-to frontend
             library. I love working with components because it helps me tackle a
             series of smaller problems rather than feeling overwhelmed by one
             large one. Coupled with NodeJS, building server-side with Express,
@@ -41,7 +41,7 @@ function Developer() {
           <h3>NoSQL DB Stack</h3>
           <img src="./img/tech-logo-3.png" alt="img" />
           <p>
-            Given that I've become quite fond of the MERN Stack, MondoDB
+            Given that I've become quite fond of the{" "} <a href="https://www.mongodb.com/mern-stack" target="_blank">MERN</a> Stack, MondoDB
             enhanced with Mongoose is my database workflow of choice.
           </p>
         </div>
@@ -69,10 +69,10 @@ function Developer() {
               href="https://www.youtube.com/watch?v=rMuCZuPllEE"
               target="_blank"
             >
-              ICP
+              ICP (Internet Computer Protocol)
             </a>
             . Throw in Hardhat, and Moralis for safe measure, and I'll be
-            building web3 DApps versions of all my web2 Apps in no time.
+            building web3 DApp versions of all my web2 Apps in no time.
           </p>
         </div>
       </div>
@@ -89,9 +89,8 @@ function Developer() {
           where I can also collect and share anything else I'm learning and
           evolving. <br />
           <br />
-          Ultimately, this could end up being a scaled enterprise app with
-          functionality, with multiple businesses attached to it. The sky's the
-          limit and I'm proud to make it my own.
+          By and by, my site will be scaled to an enterprise app with cpmplex
+          functionality. The sky is the limit and I'm proud to make it my own.
         </p>
 
         <Card

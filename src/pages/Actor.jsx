@@ -22,7 +22,7 @@ function Actor() {
         traveled the world and began a dual-life in South Korea. Will update
         soon . . . I just wanted you to know this about me for the time being.
         Perhaps it makes me more creative and versatile in all of my other
-        pursuits. Just an thought . . .{" "}
+        pursuits. Just an thought.{" "}
       </p>
     </div>
   );
