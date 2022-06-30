@@ -53,7 +53,10 @@ function Developer() {
             Ultimately, I'm going the direction of web3 and the blockchain. It's
             undoubtedly the next iteration of the web. Within the context of
             web3 I'm walking on the cutting edge of tomorrow. That's why in
-            addition to Solidity, I'm learning{" "}
+            addition to <a
+              href="https://www.makeuseof.com/what-is-solidity/"
+              target="_blank"
+            >Solidity,</a> I'm learning{" "}
             <a
               href="https://www.youtube.com/watch?v=4eSceDOS-Ms"
               target="_blank"
@@ -89,7 +92,7 @@ function Developer() {
           where I can also collect and share anything else I'm learning and
           evolving. <br />
           <br />
-          By and by, my site will be scaled to an enterprise app with cpmplex
+          By and by, my site will be scaled to an enterprise app with complex
           functionality. The sky is the limit and I'm proud to make it my own.
         </p>
 

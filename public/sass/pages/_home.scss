@@ -15,7 +15,8 @@
     grid-column: 1 / -1;
 
     h3 {
-      font-size: 12rem;
+      font-size: 10rem;
+      animation: moveInTop .5s ease-in;
       @include respond(mobile-port) {
         font-size: 8rem;
       }

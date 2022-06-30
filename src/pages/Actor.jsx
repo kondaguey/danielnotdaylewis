@@ -16,13 +16,7 @@ function Actor() {
       <h2 className="actor__subheading">Page currently under construction</h2>
 
       <p className="actor__paragraph">
-        Oh, the stories I have from being a professional actor for ten years.
-        While I am on hiatus I still dabble in voice acting, and given the
-        opportunity I'd dabble in to stage and screen as well. Post-hiatus I
-        traveled the world and began a dual-life in South Korea. Will update
-        soon . . . I just wanted you to know this about me for the time being.
-        Perhaps it makes me more creative and versatile in all of my other
-        pursuits...{" "}
+        With the exception of some professional voiceover work, I'm on indefinite hiatus as I work on other career aspirations (i.e. development and design). <br /><br />But do check out my resume above if you're curious. {" "}
       </p>
     </div>
   );
