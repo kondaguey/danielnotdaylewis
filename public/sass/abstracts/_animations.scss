@@ -41,13 +41,15 @@
   }
 
   50% {
-    transform: scale(1.2);
+    transform: scale(1.05);
     @include boxShadow;
     background-color: rgba($color-white, 1);
   }
 
   100% {
-    transform: scale(1);
+    transform: scale(1.05);
+    @include boxShadow;
+    background-color: rgba($color-white, 1);
   }
 }
 
