@@ -200,15 +200,15 @@
 
   &__projects {
     
-    grid-column: center-start / center-end;
+    grid-column: full-start / full-end;
     display: grid;
     
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5rem;
-    padding: 2rem 20rem;
+    padding: 2rem 10rem;
     @include respond(mobile-land_tab-port) {
-      padding: 0 2rem;
-      grid-template-columns: min-content;
+      padding: 0 1rem;
+      grid-template-columns: 1fr;
       justify-items: center;
       justify-content: center;
       align-items: center;
@@ -224,7 +224,7 @@
     &__explainer {
       grid-column: 1 / -1;
       text-align: center;
-      padding: 0 15rem;
+      padding: 0 25rem;
 
       @include respond(mobile-port) {
         padding: 0;

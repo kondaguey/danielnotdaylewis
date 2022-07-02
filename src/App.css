@@ -622,15 +622,15 @@ p {
           color: transparent;
           cursor: pointer; }
   .dev__projects {
-    grid-column: center-start / center-end;
+    grid-column: full-start / full-end;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5rem;
-    padding: 2rem 20rem; }
+    padding: 2rem 10rem; }
     @media only screen and (max-width: 37.5em) {
       .dev__projects {
-        padding: 0 2rem;
-        grid-template-columns: min-content;
+        padding: 0 1rem;
+        grid-template-columns: 1fr;
         justify-items: center;
         justify-content: center;
         align-items: center; } }
@@ -642,7 +642,7 @@ p {
     .dev__projects__explainer {
       grid-column: 1 / -1;
       text-align: center;
-      padding: 0 15rem; }
+      padding: 0 25rem; }
       @media only screen and (max-width: 27em) {
         .dev__projects__explainer {
           padding: 0; } }
