@@ -36,15 +36,10 @@ function Copywriter() {
         ></audio>
       </div>
 
-      <div className="copy__feedback">
-        <p>client feedback . . .</p>
-        <img src="./img/feedback.png" alt="client feedback" />
-      </div> */}
-
-      
+       */}
 
       <div className="copy__header">
-        <h3>/copywriter</h3>
+        <h1>/copywriter</h1>
       </div>
 
       <div className="copy__container">
@@ -60,26 +55,30 @@ function Copywriter() {
         </div>
 
         <div className="copy__container__direct">
-        <a href="./media/CopywriterDirect.pdf" target="_blank"><h2>Direct</h2></a>
+        <a href="./media/Daniel_Lewis_Direct.pdf" target="_blank"><h2>Direct</h2></a>
         </div>
 
         <div className="copy__container__transform">
-        <h2>Transformative</h2>
+        <a href="./media/Daniel_Lewis_Story.pdf" target="_blank"><h2>Storytelling</h2></a>
         </div>
 
-        <div className="copy__container__web3">
-        <span>new!</span>
-        <h2>Web3 Content</h2>
+        <div className="copy__container__creative">
+        <a href="/creativewriter"><h1>/creativewriter</h1></a>
         </div>
 
         <div className="copy__container__content">
-        <a href="./media/CopywriterContent.pdf" target="_blank"><h2>Content/<br/>SEO</h2></a>
+        <a href="./media/Daniel_Lewis_Content.pdf" target="_blank"><h2>Content + <br/>SEO</h2></a>
         </div>
 
         <div className="copy__container__brand">
-        <h2>Brand</h2>
+        <a href="./media/Daniel_Lewis_Brand.pdf" target="_blank"><h2>Brand</h2></a>
         </div>
 
+      </div>
+
+      <div className="copy__feedback">
+        <p>client feedback . . .</p>
+        <img src="./img/feedback.png" alt="client feedback" />
       </div>
     </div>
   );

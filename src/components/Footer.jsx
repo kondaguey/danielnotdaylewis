@@ -51,7 +51,7 @@ function Footer() {
         <p className="footer__copyright-year">&copy;{year} by Daniel Lewis</p>
         <img
           className="footer__copyright-img"
-          src="./img/dndl-logo.png"
+          src="./img/dndl-logo-white.png"
           alt="logo"
         />
       </div>
