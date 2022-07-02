@@ -17,10 +17,10 @@ function Developer() {
         <h2>projects</h2>
 
         <p className="dev__projects__explainer">
-          Aside from the projects listed below, this website itself is a living
-          portfolio. It's a place for me to actively practice my craft of
+          Aside from the projects listed below, this website itself is a mutable, living
+          porject. It's a place for me to actively practice my craft of
           development and design. As my skills and practice
-          evolve, so will the website – becoming better and better with time.
+          evolve, so will the functionality of this website – becoming better and better with time.
         </p>
 
         <Card
@@ -67,7 +67,6 @@ function Developer() {
           skill="Web3 Marketplace and DApp"
         />
       </div>
-
 
       <div className="dev__skills">
         <div className="dev__skills__skill dev__skills__skill-1">

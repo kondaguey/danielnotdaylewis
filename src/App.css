@@ -879,7 +879,8 @@ p {
       width: 90%; }
       @media only screen and (max-width: 27em) {
         .copy__feedback img {
-          width: 100%; } }
+          width: 100vw;
+          height: auto; } }
 
 .collab {
   display: flex;
