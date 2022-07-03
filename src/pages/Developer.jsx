@@ -9,7 +9,7 @@ function Developer() {
       <div className="dev__header">
         <h1>/developer</h1>
         <a icon="./img/favicon.png" href="./media/DeveloperResume.pdf" target="_blank">
-          <h2>resume</h2>
+          <h2>rapidly improving resume</h2>
         </a>
       </div>
 
@@ -17,10 +17,9 @@ function Developer() {
         <h2>projects</h2>
 
         <p className="dev__projects__explainer">
-          Aside from the projects listed below, this website itself is a mutable, living
-          porject. It's a place for me to actively practice my craft of
+          Portfolio piece no. 1. This website. Cooked from  scratch, it's a place for me to eagerly apply my craft of
           development and design. As my skills and practice
-          evolve, so will the functionality of this website – becoming better and better with time.
+          evolve, so will the functionality and look of this site.
         </p>
 
         <Card
@@ -69,7 +68,9 @@ function Developer() {
       </div>
 
       <div className="dev__skills">
+      <h3>Tech stack for the keen-eyed</h3>
         <div className="dev__skills__skill dev__skills__skill-1">
+          
           <h3>Structure and Styles</h3>
           <img src="./img/tech-logo-1.png" alt="img" />
           <p>

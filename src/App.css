@@ -491,6 +491,12 @@ p {
     display: flex;
     flex-direction: column;
     margin: 10rem 0; }
+    .dev__skills h3 {
+      align-self: center;
+      margin-bottom: 10rem; }
+      @media only screen and (max-width: 27em) {
+        .dev__skills h3 {
+          text-align: center; } }
     @media only screen and (max-width: 27em) {
       .dev__skills {
         justify-content: center;
@@ -698,13 +704,34 @@ p {
 .copy {
   display: grid;
   grid-template-columns: 1fr 80vw 1fr;
-  grid-template-rows: 1fr max-content min-content 1fr;
+  grid-template-rows: 1fr max-content min-content;
   justify-items: center; }
   .copy__header {
     grid-column: 2 / 3;
     justify-self: center;
+    text-align: center;
     margin: 5rem;
     animation: moveInBottom 1s ease-in; }
+    .copy__header h2 {
+      margin-top: 1rem;
+      font-size: 3rem !important; }
+      @media only screen and (max-width: 27em) {
+        .copy__header h2 {
+          font-size: 2rem !important; } }
+    .copy__header p {
+      margin-top: 1rem;
+      font-size: 2.5rem !important; }
+      @media only screen and (max-width: 27em) {
+        .copy__header p {
+          font-size: 1.7rem !important; } }
+      .copy__header p a {
+        background-image: linear-gradient(to right, #01aae4, #6ec362);
+        -webkit-background-clip: text;
+        color: transparent; }
+      .copy__header p a:hover {
+        background-image: linear-gradient(to right, #6ec362, #01aae4);
+        -webkit-background-clip: text;
+        color: transparent; }
   .copy__container {
     grid-column: 2 / 3;
     display: grid;
@@ -884,8 +911,7 @@ p {
       width: 90%; }
       @media only screen and (max-width: 27em) {
         .copy__feedback img {
-          width: 100vw;
-          height: auto; } }
+          width: 100vw; } }
 
 .creativewriter {
   display: flex;

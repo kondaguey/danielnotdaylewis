@@ -34,8 +34,16 @@
     grid-row: 3 / 4;
     display: flex;
     flex-direction: column;
-
     margin: 10rem 0;
+
+    h3{
+      align-self: center;
+      margin-bottom: 10rem;
+      @include respond(mobile-port) {
+        text-align: center;
+      }
+    }
+
 
     @include respond(mobile-port) {
       justify-content: center;

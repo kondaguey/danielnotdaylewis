@@ -40,6 +40,16 @@ function Copywriter() {
 
       <div className="copy__header">
         <h1>/copywriter</h1>
+        <h2>ingredients that help: </h2>
+        <p>+ tastefully sardonic</p>
+        <p>+ natural comedic ability (cannot be taught)</p>
+        <p>+ pro actor and improvisor</p>
+        <p>+ screenplay writer</p>
+        <p>+ 70+ audiobooks narrated</p>
+        <p>+ snooty private high school</p>
+        <p>+ snootier world-class drama degree</p>
+        <p>+ venti in Spanish, grande in Korean</p>
+        <p>+ otherwise, here's an everyman <a href="./media/CopywriterResume.pdf" target="_blank"> resume</a></p>
       </div>
 
       <div className="copy__container">
