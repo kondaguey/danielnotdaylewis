@@ -42,7 +42,7 @@ function Copywriter() {
         <h1>/copywriter</h1>
         <h2>ingredients that help: </h2>
         <p>+ tastefully sardonic</p>
-        <p>+ natural comedic ability (cannot be taught)</p>
+        <p>+ natural comedic ability (arguably cannot be taught)</p>
         <p>+ pro actor and improvisor</p>
         <p>+ screenplay writer</p>
         <p>+ 70+ audiobooks narrated</p>

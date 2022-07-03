@@ -364,7 +364,7 @@ p {
       margin: 0 auto; }
       @media only screen and (max-width: 27em) {
         .card__subtitle ul {
-          padding-top: 3rem; } }
+          padding-top: 0; } }
       .card__subtitle ul li {
         text-align: center;
         font-size: 2.5rem;
@@ -477,14 +477,16 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     margin-top: 7rem; }
     .dev__header h1 {
       animation: moveInLeft 0.7s ease-in;
-      justify-self: center; }
+      justify-self: center;
+      text-align: center; }
     .dev__header h2 {
       animation: moveInRight 0.7s ease-in;
-      font-size: 3rem; }
+      font-size: 3rem;
+      text-align: center; }
   .dev__skills {
     grid-column: center-start / center-end;
     grid-row: 3 / 4;
@@ -957,6 +959,9 @@ p {
   display: grid;
   grid-template-columns: 70vw;
   justify-content: center; }
+  @media only screen and (max-width: 27em) {
+    .pp {
+      grid-template-columns: 100vw; } }
   .pp h3 {
     margin-top: 5rem;
     text-align: center; }

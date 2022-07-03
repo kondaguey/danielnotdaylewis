@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns:70vw;
   justify-content: center;
+  @include respond(mobile-port) {
+    grid-template-columns:100vw;
+  }
 
   h3{
     margin-top: 5rem;
