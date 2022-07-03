@@ -17,6 +17,9 @@ function DropdownMenu(props) {
         <li className="menu-bar__links__item-button-dropdown--item">
           <a href="/copywriter">/copywriter</a>
         </li>
+        <li className="menu-bar__links__item-button-dropdown--item">
+          <a href="/">홈</a>
+        </li>
       </ul>
     </div>
   );

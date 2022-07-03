@@ -116,9 +116,13 @@
 
           &--item {
             padding: 1rem;
-
+            &:not(:first-child){
+              border-top: $color-grey-light 1px solid;
+            }
+            
             a {
               font-size: 2.5rem;
+              
               background-image: linear-gradient(
                 to right,
                 $color-primary,
@@ -141,5 +145,11 @@
         }
       }
     }
+  }
+}
+
+.kr{
+  a{
+    font-size: 10rem !important;
   }
 }
