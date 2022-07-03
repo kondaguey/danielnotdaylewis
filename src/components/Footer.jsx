@@ -11,7 +11,7 @@ function Footer() {
       <ul className="footer__nav">
         <li className="footer__nav__item">
           <a href="/privacypolicy" className="footer__nav__item-link">
-            Privacy Policy
+            Disclaimers
           </a>
         </li>
         <li className="footer__nav__item">

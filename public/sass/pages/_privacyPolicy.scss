@@ -1,8 +1,17 @@
 .pp {
   display: grid;
+  grid-template-columns:70vw;
+  justify-content: center;
+
+  h3{
+    margin-top: 5rem;
+    text-align: center;
+  }
+  
   p {
-    font-size: 2rem;
+    font-size: 2rem !important;
     text-align: center;
     padding: 5rem;
+    
   }
 }

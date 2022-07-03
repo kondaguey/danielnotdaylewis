@@ -696,7 +696,8 @@ p {
     width: 75%;
     justify-self: center;
     text-align: center;
-    font-weight: 400 !important; }
+    font-weight: 400 !important;
+    margin-bottom: 15rem; }
     @media only screen and (max-width: 27em) {
       .actor__paragraph {
         padding: 5rem 0 0 0; } }
@@ -953,8 +954,13 @@ p {
         font-size: 2rem; } }
 
 .pp {
-  display: grid; }
+  display: grid;
+  grid-template-columns: 70vw;
+  justify-content: center; }
+  .pp h3 {
+    margin-top: 5rem;
+    text-align: center; }
   .pp p {
-    font-size: 2rem;
+    font-size: 2rem !important;
     text-align: center;
     padding: 5rem; }

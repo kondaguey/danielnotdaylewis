@@ -14,6 +14,7 @@ function Actor() {
       <p className="actor__paragraph">
         I am still accepting some professional voiceover work. Otherwise this dude is on indefinite hiatus as I work on other career aspirations (i.e. development and design). <br /><br />But do check out my resume above if you're curious. {" "}
       </p>
+    
     </div>
   );
 }
