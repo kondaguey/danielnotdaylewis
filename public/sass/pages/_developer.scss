@@ -38,14 +38,13 @@
     flex-direction: column;
     margin: 10rem 0;
 
-    h3{
+    h3 {
       align-self: center;
       margin-bottom: 10rem;
       @include respond(mobile-port) {
         text-align: center;
       }
     }
-
 
     @include respond(mobile-port) {
       justify-content: center;
@@ -209,10 +208,9 @@
   }
 
   &__projects {
-    
     grid-column: full-start / full-end;
     display: grid;
-    
+
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5rem;
     padding: 2rem 10rem;
@@ -238,15 +236,12 @@
 
       @include respond(mobile-port) {
         padding: 0;
-       
-        
       }
-      
     }
 
     &__rolling {
-      ul{
-        padding-top: 15rem;
+      ul {
+        padding-top: 0rem;
       }
     }
   }

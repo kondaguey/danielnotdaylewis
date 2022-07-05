@@ -23,12 +23,12 @@ function Developer() {
         </p>
 
         <Card
-          className="dev__projects__rolling"
           project="Rolling Real Estate"
           image="./img/rolling.png"
           url="https://rolling-real-estate.pages.dev/"
           language="Advanced CSS"
-          skill="Grids"
+          skill="Advanced Grids"
+          
         />
         <Card
           project="Wanderlust"

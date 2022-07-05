@@ -334,49 +334,43 @@ p {
   border-radius: 3px;
   background-color: transparent;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
-  display: flex;
-  flex-direction: column;
   border: #acdbdb solid 2px;
   transition: all 0.2s ease; }
   @media only screen and (max-width: 27em) {
     .card {
       margin-bottom: 2rem; } }
   .card__picture {
-    background-size: fill;
     width: 100%;
     height: auto;
-    background-blend-mode: screen;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    object-fit: contain;
+    object-fit: cover;
     background-image: linear-gradient(to right bottom, #01aae4, #6ec362); }
     .card__picture img {
-      width: 100%; }
-  .card__subtitle {
-    padding: 1rem 3rem; }
+      width: 100%;
+      object-fit: contain; }
+  @media only screen and (max-width: 27em) {
+    .card__subtitle {
+      height: fit-content; } }
+  .card__subtitle ul {
+    list-style: none;
+    width: 75%;
+    margin: 0 auto; }
     @media only screen and (max-width: 27em) {
-      .card__subtitle {
-        height: fit-content; } }
-    .card__subtitle ul {
-      list-style: none;
-      width: 75%;
-      margin: 0 auto; }
+      .card__subtitle ul {
+        padding-top: 0; } }
+    .card__subtitle ul li {
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 1rem;
+      background-image: linear-gradient(to right, #01aae4, #6ec362);
+      -webkit-background-clip: text;
+      color: transparent; }
+      .card__subtitle ul li:not(:last-child) {
+        border-bottom: 1px solid #e4e4e7; }
       @media only screen and (max-width: 27em) {
-        .card__subtitle ul {
-          padding-top: 0; } }
-      .card__subtitle ul li {
-        text-align: center;
-        font-size: 2.5rem;
-        padding: 1rem;
-        background-image: linear-gradient(to right, #01aae4, #6ec362);
-        -webkit-background-clip: text;
-        color: transparent; }
-        .card__subtitle ul li:not(:last-child) {
-          border-bottom: 1px solid #e4e4e7; }
-        @media only screen and (max-width: 27em) {
-          .card__subtitle ul li {
-            font-size: 1.5rem; } }
+        .card__subtitle ul li {
+          font-size: 1.5rem; } }
   .card__heading {
     font-size: 2.5rem;
     font-weight: 300;
@@ -420,7 +414,7 @@ p {
       animation: moveInTop .5s ease-in; }
       @media only screen and (max-width: 27em) {
         .home__milkshake h1 {
-          font-size: 8rem; } }
+          font-size: 6rem; } }
     .home__milkshake h4 {
       font-family: "Montserrat", sans-serif;
       font-weight: 400;
@@ -660,7 +654,7 @@ p {
         .dev__projects__explainer {
           padding: 0; } }
     .dev__projects__rolling ul {
-      padding-top: 15rem; }
+      padding-top: 0rem; }
   .dev__construct {
     grid-column: 1 / -1;
     margin-top: 10rem; }
