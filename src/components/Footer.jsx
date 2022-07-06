@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { SiMedium, SiTwitter, SiStackoverflow } from "react-icons/si";
+import { FaPeopleCarry } from "react-icons/fa";
+import { HiOutlineSpeakerphone } from "react-icons/hi";
 
 const date = new Date();
 const year = date.getFullYear();
@@ -10,39 +12,58 @@ function Footer() {
     <div className="footer">
       <ul className="footer__nav">
         <li className="footer__nav__item">
-          <a href="/privacypolicy" className="footer__nav__item-link">
-            Disclaimers
+          <a
+            href="https://medium.com/@daniel_notday_lewis"
+            className="footer__nav__item-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="footer__nav__item-logo">
+              <SiMedium />
+            </span>
+            Medium
+          </a>
+        </li>
+        <li className="footer__nav__item">
+          <a
+            href="https://twitter.com/daniel_nd_lewis"
+            target="_blank"
+            className="footer__nav__item-link"
+            rel="noreferrer"
+          >
+            <span className="footer__nav__item-logo">
+              <SiTwitter />
+            </span>
+            Twitter
+          </a>
+        </li>
+        <li className="footer__nav__item">
+          <a
+            href="https://stackoverflow.com/users/17514943/daniel"
+            target="_blank"
+            className="footer__nav__item-link"
+            rel="noreferrer"
+          >
+            <span className="footer__nav__item-logo">
+              <SiStackoverflow />
+            </span>
+            Stack Overlfow
           </a>
         </li>
         <li className="footer__nav__item">
           <a href="/collab" className="footer__nav__item-link">
-            Collab / Hire before taken
+            <span className="footer__nav__item-logo">
+              <FaPeopleCarry />
+            </span>
+            Collab
           </a>
         </li>
         <li className="footer__nav__item">
-          <a
-            href="https://github.com/kondaguey"
-            className="footer__nav__item-link"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="/privacypolicy" className="footer__nav__item-link">
             <span className="footer__nav__item-logo">
-              <AiFillGithub />
+              <HiOutlineSpeakerphone />
             </span>
-            Github
-          </a>
-        </li>
-        <li className="footer__nav__item">
-          <a
-            href="https://www.linkedin.com/in/daniel-lewis-55a903195/"
-            target="_blank"
-            className="footer__nav__item-link"
-            rel="noreferrer"
-          >
-            <span className="footer__nav__item-logo">
-              <AiFillLinkedin />
-            </span>
-            LinkedIn
+            Disclaimers
           </a>
         </li>
       </ul>
